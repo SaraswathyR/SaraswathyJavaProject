@@ -1,0 +1,482 @@
+DAY 1
+CLASS 1 
+
+* everything in Java is Object (but there is a but) 
+* Object has structure and it does a specific work
+
+Real time 
+
+Taluk Office
+
+* Marriage certificate, Income certificate, death certificate, Caste certificate
+
+Receptionist
+Clerk
+Broker
+
+building - Taluk office 
+
+Reception: 
+chairs
+table
+reception table 
+people 
+water
+newspaper
+pen
+Reception phone
+Rceptionist
+Receptionst personal phone
+documents
+camera
+system
+
+
+Marriage certificate room: 
+people
+chairs
+table
+camera 
+system 
+newspapre
+document
+pen
+water
+Personal phone
+common phone
+marriage certificates
+
+Income certificate room: 
+people
+chairs
+table
+camera 
+system 
+newspapre
+document
+pen
+water
+Personal phone
+common phone
+income certificates
+
+Access Modifer
+Personal things 
+common things
+
+
+each room is to do a specfic designated work. 
+	each room is called Method.
+	Method in java is to do a specific work
+	Whatever work you do, it should be a method or inside a method
+	Whatever happens inside a method is invisible to others
+	You can take reception room water bottle to any methods room but you can not take methods room things to other places (there is a but)
+
+Structure 
+People - 50
+chair - 100
+table - 10
+
+people, chair, table - data type 
+
+People - 100 - count 100 - data type and variable 
+One person in that people name is Sathya - name 
+
+Taluk office building 
+	It is to do a set of work - marriage, income & other certificates
+	Marriage certificate method, Income certificate method, etc. (each of them are methods)
+	Class in java consist of many methods
+Taluk office - Class
+
+
+People adminstration - package
+Chennai Taluk office - Class 
+	below are sub classes of Chennai Taluk office 
+Velachery Taluk office - Class 
+	Velachery east Taluk office - Class (He is sub class of Velachery class)
+Tambaram Taluk office - Class
+Guindy Taluk office - Class 
+
+* Sub classes of Chennai are Velachery, Guindy and Tambaram
+* Velachery east is sub class of Velachery 
+* Velachery east is same package of Tambaram but not a sub class of Tambaram
+
+Based on this only we created access modifier 
+
+
+Police department adminstration - package
+Chennai police station 
+Tambaram police station 
+
+Hospital administration - package 
+chennai hospital (Govt and private) 
+tambaram hospital 
+
+Law management - package
+Chennai court 
+Tambaram court 
+
+Chennai administration - project 
+	People adminstration - package
+	Police department adminstration - package
+	Hospital administration - package 
+	Law management - package
+	
+
+* People adminstration have a set of rules
+* Police department have set of rules
+* Hopspital adminstration 
+	private hospital rules set
+	Govt hospital rules set 
+
+These rules set in Java are called interface
+
+Taluk office 
+	Receptionist - Chennai Taluk office receptionist
+	Reception Phone - Chennai taluk office phone 
+	Reception table - Chennai taluk office reception table 
+similarly for other classes too. 
+
+They are always belongs to their specific class  - static 
+	* Whenever we call a static member, we call them with their class name 
+
+Velachery Govt hospital - class 
+	* They are scheduling a health checkup camp 
+		* In this case, they take doctors, nurses, medicines, operation room, cleaning room and other things from Velachery Govt hospital only
+
+Health checkup camp - Object name 
+Object we create for class only
+When creating object, they take/create copy of all the things in that class
+
+Tambaram police station wants health check up 
+* In Tambaram police station's campus, we create object for Tambaram Govt hospital health check up camp 
+
+Coming back to Taluk office 
+clerk in taluk office, we take as constructor
+
+* We just tell what you want 
+* you tell what you want with document
+* you tell what you want with document1, document2
+* you tell what you want with documents, amount
+* you tell what you want with amount
+
+***************************************************************************************
+
+DAY 2 
+CLASS 2
+
+Project
+	package1
+		InterfaceA
+		ClassA (variables/methods)
+			ClassAA 
+			ClassAB
+		ClassB
+		ClassC
+	package2
+		ClassA
+		ClassB
+	package3
+		ClassX
+		ClassA
+		
+
+* Class - It does a set of work. It consist of variables and methods. Each work would be done by methods. 
+
+* Methods - It does speicific job. It always written inside a class
+
+* Variable - it can have type(Data type) and posses a number or name;
+			variables can have different access - access Modifier
+			
+* Access Modifier - difines where we can use a variable/method/class
+
+* Interface - It contains rules most of the time. Sometimes it does some work too(means method).
+			Interface is always followed by class/classes. 
+			When class follows interface, class should do the rule written in the interface
+
+* package - contains class/classes/interface/interfaces/file/files/folder/folders
+
+* Project - consist of package/packages/file/files/folder/folders/source(src)folder
+
+* static - static means belongs to the class. If govt hospital is class, then hospital receptionist is a static member of that class. We can not seperate them
+			variables and methods can be static
+			within a class - static can be used anywhere directly (in a static method or in non-static method)
+			Outside calss - static can be used but alone with class name. (in a static method or in non-static method)
+
+* Object - E.g: Medical camp; We create Object only for classes; Whenever we create object we copy whatever the class contains(except static)
+			means, only non-static is copied
+			Through object we can not call static things.
+
+* Constructor - Object creation happens with the help of constructor
+				constructor is available in different kind
+				1. without any money/permission
+				2. only with money
+				3. only with permission
+				4. with both money and permission
+
+###############################################################################################
+				
+Class - important thing, through which we perform some task. Class may contains methods and variables
+
+Method1 - A work
+Method2 - B work
+Method3 - C work ( A work + some other work)
+
+redundant - repeatable 
+resure
+
+Variables - shape and count/name
+shape - datatype 
+
+
+Datatype: Its a classification of a data, which tells the compiler or interpretor about how the programmer intends to use the data.
+
+1) Primitive
+	a) boolean - yes or no
+	b) Textual 
+		char - a, b, c, A, B
+		byte - 
+			byte x = 10;
+	c) numeric 
+		int 
+		short
+		double
+		long
+		float
+
+2) Non Primitive
+	d) String 
+	e) array
+
+each datatype has a default value
+
+* default value of String is null
+* default value of int is 0
+* boolean - false
+
+int a = 10;  
+int a;
+String a = "10";
+double a = 10d;
+char sathya = 'A';
+boolean b = true;
+
+int a; - declare
+a = 10; - define/initiate
+
+int a = 10;
+int - data type( primitive --> numeric)
+a - variable/variableName;
+10 - value posses by the variable/ value pointed by the variable
+
+Variables - Its a memory location that can hold values of a specific datatype.
+
+Types of variables 
+1. Local variable - 
+	* declared within a method/constructor, for, if    -- block ({...})
+	* scope of local variable is only within the block in which the variable is declared
+	* intialization of local variable is madatory
+	* local variables can not be static
+	{
+	int a = 10;
+	char c;
+	String sathya = "10";
+	}
+	
+2. Instance variable/class variable/non-static  variable
+	* Declared within a class but outside of a block ({...})
+	* Non- static variables
+	* To access instance variables, we need to create object
+	
+	int a = 10;
+	String sathya = "10";
+	
+	
+3. Static variable
+	* Declared within a class but outside fo a method
+	* static keyword is used with variables and methods
+	* To access this variable, dont need to create an object
+	* within a class - static can be used anywhere directly (in a static method or in non-static method)
+	* Outside calss - static can be used but alone with class name. (in a static method or in non-static method)
+	
+	static int a = 10;
+	static String sathya = "10";
+	
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	
+Access Modifier
+	* It defines where and who can use a method/variable/class
+	1) default
+	2) private
+	3) protected
+	4) public 
+	
+	int a = 10; - default (no need to mention "default" word
+	private int a = 10;
+	protected int a = 10;
+	public int a = 10;
+	
+	
+	packageA
+		classA ( public int a = 10)
+			ClassAA (same package and sub class of A)
+		classB (same package but non sub class of A)
+	packageX
+		classX (diff package non sub class)
+		classXA (diff package but sub class of A)
+		
+	
+
+                                     | default |  private  | protected  | public 
+									 |         |           |            | 
+classA ( int a = 10)                 | yes     | yes       | yes        | yes
+									 |         |           |            |
+same package but sub class           | yes     | no        | yes        | yes
+									 |         |           |            |
+same package but non sub class       | yes     | no        | yes        | yes
+									 |         |           |            |
+different package but sub class      | no      | no        | yes        | yes
+									 |         |           |            |
+different package but non sub class  | no      | no        | no         | yes
+
+*******************************************************************************************************
+
+DAY 3
+
+JVM, JRE, JDK
+
+our codes - english - .java
+compile - .class - byte code (machine recognizable language)
+
+
+JVM - Java Virtual Machine 
+* This can not be seen
+* it starts the execution
+* It first checks for main method
+* It creates the code flow, in java the flow is called "Thread" 
+* JVM provides run time environment in which Java byte codes can be executed
+* loads code| verifies code| execute code| provides run time environment
+
+JRE - Java Runtime Environment
+* Physically exist
+* Contains JVM and set of libraries
+* JVM uses these libraries to execute the codes
+
+JDK - Java Developement kit
+* It contains JVM, set of libraries and dev tools (JRE + dev tools)
+* Used to develop and execute the codes
+* Dev tools + debugger + compiler + java doc
+
+--------------------------------------
+
+What is eclipse (IDE)
+
+Its an editor to edit and view your project or project files
+While writing itself, it will notify us about complilation errors
+
+Its a user interface to view your project or file in an easy way
+
+tab
+drag and drop
+
+* Perspective 
+	Few of the perspectives in Eclipse
+	* Java
+	* Debug
+	* Git
+	
+* window
+
+Maven
+
+GroupID
+Artifact ID 
+verision
+
+Facebook jar
+Meta 
+facebook
+version 1.1.100
+
+Insta jar
+Meta
+Insta
+version 10.1.10
+
+* Dependency Management tool
+* we dont need to download any jar files(dependency).
+* Group ID, Artifact ID and Version
+* If we create a project with mavan as a dependency management tool, we get a proper project structure.
+* Important file in maven project is pom.xml. In this file, we add dependency details 
+* Dependencies will be stored in .m2 folder
+
+************************************************************************************************
+DAY 4
+
+Git 
+
+We can store our project code in a proper structure. 
+It will help us to reduce time and many people can work on a project at a same time 
+
+1. Create a project in local (our system)
+2. Create git account
+3. Create a repo in your git account (remote)
+4. We view our local project in system through Eclipse
+5. We need to connect our Eclipse with Git repo
+
+upload project in Git
+
+Steps to upload project in Git hub
+
+1) Create a remote repository
+2) In your system open git bash from your project location
+3) enter below commands
+	git init
+	git add .
+	git commit -m "any message you can type here"
+	git remote add origin SSHURL
+	git push origin master
+	
+	
+	To view status:  git status 
+	to clear lines: clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
