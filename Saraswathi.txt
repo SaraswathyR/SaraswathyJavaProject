@@ -599,7 +599,7 @@ Immutable concept
 
 
 
-
+Data types as variables 
 Variables in Java
 
 Based on where we use our data types or variable names, we categories variables in 3 types 
@@ -612,8 +612,17 @@ Based on where we use our data types or variable names, we categories variables 
 
 ****************************************************************************************
 
-
+Daya type as a parameter and return type
 Variable as a parameter
+
+Methods in Java
+1) method without return type
+2) method with return type
+3) static method
+4) non static method
+5) parameterized method
+6) Non parameterized method
+
 
 
 
