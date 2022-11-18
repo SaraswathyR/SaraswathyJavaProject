@@ -20,6 +20,8 @@ public class Returntype1 {
 		obj.balAmount = obj.buySoap1(75);
 		
 		balAmt = obj.buySoap1(75);
+		
+		int reValue = obj.buySoap2(20);
 	}
 	
 	public void buyRice() {
@@ -56,6 +58,12 @@ public class Returntype1 {
 		System.out.println(balanceAmount);
 		return balanceAmount;
 	}
+	
+	public int buySoap2(int amount) {
+		return amount;
+		
+	}
+	
 	
 	
 	
