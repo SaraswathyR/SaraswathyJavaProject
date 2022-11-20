@@ -30,5 +30,15 @@ public class TestClass2 implements Interface2 {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	public void callingConcreteMethodsOfInterface() {
+		LearnInterface.rule2();
+		TestClass2 obj = new TestClass2();
+		obj.rule3();
+		
+		LearnInterface obj1 = new TestClass2(); 
+		obj1.rule3();
+//		obj1.test1();
+	}
 
 }

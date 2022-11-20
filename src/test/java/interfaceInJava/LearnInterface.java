@@ -46,7 +46,7 @@ public interface LearnInterface {
 //		
 //	}
 	
-	public static void rule4();
+//	public static void rule4();
 
 	public static void rule2() {
 		System.out.println(a);
@@ -58,6 +58,7 @@ public interface LearnInterface {
 		rule2();
 		System.out.println("I am default method from interface");
 	}
+	
 	
 	
 
