@@ -625,6 +625,13 @@ Methods in Java
 
 
 
+*****************************************************************************
+
+DAY 6 
+
+Interface in Java
+
+Abstract class in details
 
 
 
