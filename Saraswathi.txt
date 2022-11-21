@@ -633,6 +633,87 @@ Interface in Java
 
 Abstract class in details
 
+******************************************************************************
+
+DAY 7
+
+OOPs concept
+
+Object Oriented Program means everything in the program is considered as Object
+
+Java is OOP language but not 100% OOPs language. Primitive date type (int, float, etc.), they are not object. 
+
+Root class of Java is Object. Means, if you create any class, Object class is always extended. But it is implicitly used.
+
+public class ClassA {
+
+} 
+
+this is nothing but 
+
+public class ClassA extends Object {
+
+}
+
+OOPs Concepts in Java
+
+1. Encapsulation
+2. Abstraction
+3. Inheritance
+4. Polymorphism
+
+Try the below things in each of the concepts follows
+VARIABLES
+ACCESS MODIFIERS
+METHODS - parameters or/and return type
+STATIC
+Obejct creation
+
+
+Object creation with inheritance
+
+ClassName objName = new ClassName(); 
+
+ClassName - reference Class
+objName - Object variable Name
+new - keyword
+ClassName() - Constructor, Object
+
+By using inheritance, we can create 4? types of objects (Only 3 is allowed)
+
+Class1 - parentClass
+class2 - childClass
+
+parentClass obj1 = new parentClass();
+childClass obj2 = new childClass();
+parentClass obj3 = new childClass();
+childClass obj4 = new parentClass(); - not possible
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Polymorphism
+
+One thing available in different format.
+
+* depends on 
+	1) inheritance
+	2) object creation
+	3) method signature (method name and parameters(with or without))
+
+
+Two polymorphism - Overloading, overriding 
+
+OverLoading 
+* It happens within a class 
+* Method name should be same and parameters should vary
+
+Overriding
+* It happens between two classes (Parent and child class) - Inheritance concept
+* Method name should be same and parameter also should be same
+
+
+
+
 
 
 
