@@ -49,7 +49,7 @@ public class ReturnType3 {
 		System.out.println(amount);//0
 		amount = buySoap();
 		System.out.println(amount);//50
-	}
+   	}
 	
 	public void changeClassVariableValue() {
 		System.out.println(amount); //50

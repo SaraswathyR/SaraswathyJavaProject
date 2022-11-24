@@ -331,7 +331,7 @@ Access Modifier
 									 |         |           |            | 
 classA ( int a = 10)                 | yes     | yes       | yes        | yes
 									 |         |           |            |
-same package but sub class           | yes     | no        | yes        | yes
+same package but sub class           | yes     | no        | yes        | yes 
 									 |         |           |            |
 same package but non sub class       | yes     | no        | yes        | yes
 									 |         |           |            |
