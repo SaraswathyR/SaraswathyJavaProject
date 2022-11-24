@@ -1,12 +1,12 @@
 package overloading;
 
+//* It happens within a Class
 //* Its based on method signature
 //	* Method name should be same
 //	* Parameters SHOULD/MUST vary
 //		* Type of parameter
 //		* Order of parameter
 //		* No. of parameter
-//* It happens within a Class
 //* Compile time polymorphism
 //* return type is secondary in overloading. 
 //		* Means, if two methods have same method signature and have different return types then we will see error as duplicate method.
