@@ -29,7 +29,7 @@ public class ConstructorPractice_AccessModifiers {
 class dummyClass {
 	public void method2() {
 		ConstructorPractice_AccessModifiers obj = new ConstructorPractice_AccessModifiers(10);
-		ConstructorPractice_AccessModifiers obj = new ConstructorPractice_AccessModifiers();
+//		ConstructorPractice_AccessModifiers obj1 = new ConstructorPractice_AccessModifiers();
 		obj.method1();
 	}
 }

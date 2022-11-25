@@ -5,11 +5,12 @@
 //* Constructor belongs to the class
 //* Constructor used to assign values to instance variables, especially when they are private or final
 //* Each class have its own constructor(default constructor) and it is hidden always (means implicitly available)
-//* When we create a parameterized constructor, default constructor dies. Means, we can not create object without parameters. 
-//		* In the same situation, if you want to create object without parameters, you need to explicitly define default constructor
 //* Whenever we create object for a class, after copying non static variables and methods, default constructor will always run;
 //		* Since default constructor is implicit and does not have anything in it, we dont see it running
 //		* If we explicitly put something in default constructor, while object creation, we can see it running
+//* When we create a parameterized constructor, default constructor dies. Means, we can not create object without parameters. 
+//		* In the same situation, if you want to create object without parameters, you need to explicitly define default constructor
+
 
 //* How to call constructor?
 //	It can be called by creating an object.
@@ -85,7 +86,7 @@ public class ConstructorDemo {
 		obj2.method1();
 		obj2.method2(10);
 		
-		System.out.println(TestConstructor.abc);
+//		System.out.println(TestConstructor.abc);
 		
 //		TestConstructor test = new TestConstructor();
 		

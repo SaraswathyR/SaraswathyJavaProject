@@ -5,6 +5,8 @@ public class VariablesInJava {
 	int b = 10; //classLevel variable or instance variable;
 	
 	static int c = 20; // static variable
+	
+//	final int d;
 
 	public static void main(String[] args) {
 		int a = 10; // local varibale
