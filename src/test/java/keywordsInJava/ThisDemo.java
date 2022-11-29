@@ -1,15 +1,17 @@
-//* this. keyword is used to call instance/class variables and methods
+//* this. keyword is used to call instance/class variables and methods. 
+//* this. keyword is always present implicitly when we call instance/class variables and methods within the class.
 //	* We can use this., to differentiate run time variables/local variable from instance variables;
 //	* Also by using this., we can assign runtime values to instance variables
+//* When we call a non static method from another non static method in a same class, "this." is used implicitly while calling
+//	* calling a method(), is same as this.method() with in a same class. Only for calling non-static from static, we need to create object
 
 
-//* We can use this(), to call other constructors from any constructors
+//* We can use this(), to call other constructors from any constructors with in one class.
 //* this() should be used within a constructor only. Means, we can not use it in methods.
 //* this() MUST be first statement in constructor calling
 //		- Constructor call must be the first statement in a constructor
-//* since this should be used as first line in constructor, we can not call more than one constructor from a constructor.
-//* When we call a non static method from a non static method in a same class, "this.." is used implicitly while calling
-//	* calling a  method(), is same as this.method() with in a same class. Only for calling non-static from static, we need to create object
+//* since this() should be used as first line in constructor, we can not call more than one constructor from a constructor.
+//		* means, we can not call more than one constructor from any constructor
 
 //* within a class, 
 //	1) we can simply call static method from another static method (this keyword is applied implicitly, but we always prefer static type calling)
@@ -17,7 +19,7 @@
 //	3) We need to create object to call a non-static method from a static method
 //	4) We can simply call static method from non-static method (this keyword is applied implicitly, but we always prefer static type calling)
 
-//* We can not use this inside a static method.
+//* We can not use this. keyword inside a static method.
 //* We could call only one constructor from another constructor. We can not call multiple constructor from one constructor because this() should
 //	be first line inside a constructor
 //* We can pass variable name inside this() but the variable should be static.
@@ -36,8 +38,10 @@ public class ThisDemo {
 	public int test = 44;
 	
 	public static String str1 = "Mrrrrrr.";
+	public String str2 = "Mss.";
 	
 	public ThisDemo(int num) {
+//		num = num;
 		this.num = num; 
 		num = this.num;
 		int a = 10;
@@ -48,13 +52,16 @@ public class ThisDemo {
 	
 	
 	public ThisDemo(String str) {
+		System.out.println(str1);
 		c = str;
 		System.out.println("Hello");
 	}
 	
 	public ThisDemo() {
 //		this("Mr.");
-		this(str1);
+//		this(str1);
+//		this(str2);
+		System.out.println(a);
 		System.out.println(this.a);
 		String str1 = "Mr.";
 //		this(str1);
@@ -68,6 +75,7 @@ public class ThisDemo {
 		
 		method1();
 		this.method1();
+//		this();
 		
 		method4();
 		this.method4();

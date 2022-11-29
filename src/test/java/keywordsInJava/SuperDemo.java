@@ -1,15 +1,15 @@
 //* super is keyword, it can be used with variables(static and non static), methods(static and non static) and constructors
 //* super can not be used in main method or static method
-//* whenever a child class overrides, variable and method of a parent class and if we want to use parent class variable and method,
+//* whenever a child class overrides, variable and method of a parent class and if we want to use parent class variable and method
 //	* in child class method, then we use super keyword to call parent class overridden method or variable.
 
 //* All child class constructors have super() method written implicitly.
 //* If we written super() explicitly, we cant use this() inside constructor. 
-//	But while super() is implicit, we can use this(). So in this case we can use both super() and this();
+//	But while super() is implicit, we can use this(). So in this case both super() and this() will run; THIS IS WRONG
 //* super(); 
 //* whenever we call a child class constructor, parent class constructor will be always called because
 //	* in child class constructor, super() keyword is implicitly written and it will call the parent class constructor
-//* Child class's parameterized constructor anyways have super() implicitly written but NOT super(parameterized);
+//* Child class's parameterized constructor ALWAYS have super() implicitly written but NOT super(parameterized);
 //* Parameter passed in child class constructor wont be passed to super()
 //* If we want our child class's parameterized constructor to call parent class's parameterized constructor,
 //	* then we need to pass the parameter to super() by overriding it. e.g(super(5) or super("Sathya"))
@@ -30,8 +30,9 @@ public class SuperDemo extends ParentSuperDemo {
 	}
 	
 	public SuperDemo(int a) {
-		super();
+//		super();
 //		this();
+//		super(a);
 //		super("Sathya");
 		System.out.println("I am child class parameterized constructor");
 	}
@@ -74,7 +75,7 @@ class ParentSuperDemo {
 	int c = 20;
 	
 	public ParentSuperDemo() {
-		System.out.println("I am parent class constructor");
+		System.out.println("I am parent class default constructor");
 	}
 	
 	public ParentSuperDemo(String a) {
