@@ -40,10 +40,17 @@ import java.util.Scanner;
 public class DemoArray {
 
 	public static void main(String[] args) {
+		
+		
+	}
+	
+	
+	
+	
 
-		DemoArray obj = new DemoArray();
+	public void arrayPractice() {
 
-		int ar[] = new int[3];
+		int[] ar = new int[3];
 //		ar = {10, 20, 30};
 		ar[0] = 10;
 		ar[1] = 20;
@@ -52,17 +59,42 @@ public class DemoArray {
 //		ar[4] = 45;
 
 		System.out.println(ar);
-		
-		System.out.println(ar[0]);
 
-		obj.returnSingleValueFromAnIntArray(0);
-		obj.returnSingleValueFromAnIntArray(1);
-		obj.returnSingleValueFromAnIntArray(2);
-//		obj.returnSingleValueFromAnArray(3);
+		System.out.println(ar[1]);
+
+		for (int eachValueOfAr : ar) {
+			System.out.println(eachValueOfAr);
+		}
+
+		System.out.println(ar.length);
+
+		int arrayLength = ar.length;
+		System.out.println(arrayLength);
+
+		System.out.println(ar.clone());
+
+		int[] clonedArray = ar.clone();
+		System.out.println(clonedArray);
+
+		for (int eachValue : clonedArray) {
+			System.out.println(eachValue);
+		}
 		
-		int valueInTheGivenIndex = obj.getIntArrayFromUserAndReturnAnIndexValue(2, 2);
-		System.out.println("Value in the given index is "+valueInTheGivenIndex);
+		int newArray[] = {1, 2, 3, 4, 5};
 		
+		for (int eachValue : newArray) {
+			System.out.println(eachValue);
+		}
+		
+		DemoArray da = new DemoArray();
+		da.printIntArrayUsingBasicForLoop(ar);
+//		da.printIntArrayUsingBasicForLoop(newArray);
+//		da.printIntArrayUsingBasicForLoop(clonedArray);
+		da.printIntArrayUsingForEach(ar);
+
+//		int valueInTheGivenIndex = obj.getIntArrayFromUserAndReturnAnIndexValue(2, 2);
+//		System.out.println("Value in the given index is " + valueInTheGivenIndex);
+
 		System.out.println("Hello");
 
 //		System.out.println("Please enter \"4\" numbers");
@@ -84,6 +116,12 @@ public class DemoArray {
 			System.out.println(eachValue);
 		}
 	}
+	
+	public void printAStringArrayUsingForEach(String[] array) {
+		for (String eachValue : array) {
+			System.out.println(eachValue);
+		}
+	}
 
 	public void intArrayLength(int[] arr) {
 		System.out.println(arr.length);
@@ -95,7 +133,7 @@ public class DemoArray {
 		printIntArrayUsingBasicForLoop(ar2);
 	}
 
-	public int[] returnAnArray() {
+	public int[] returnAnIntArray() {
 		int len[] = { 1, 2, 3, 4, 5 };
 		System.out.println(len.length);
 		return len;
@@ -148,14 +186,13 @@ public class DemoArray {
 
 	public int getIntArrayFromUserAndReturnAnIndexValue(int arrayLength, int index) {
 		int[] testArray = getIntArrayFromUser(arrayLength);
-		
+
 		try {
 //			System.out.println(testArray[index]);
 			return testArray[index];
-		}
-		catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("Error message: "+e.getMessage());
-			System.out.println("index should be anything less than length "+ arrayLength);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Error message: " + e.getMessage());
+			System.out.println("index should be anything less than length " + arrayLength);
 			return 0;
 		}
 //		return testArray[index];
