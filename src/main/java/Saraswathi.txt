@@ -1,4 +1,4 @@
-DAY 1
+ DAY 1
 CLASS 1 
 
 * everything in Java is Object (but there is a but) 
@@ -204,7 +204,7 @@ Project
 			Outside calss - static can be used but alone with class name. (in a static method or in non-static method)
 
 * Object - E.g: Medical camp; We create Object only for classes; Whenever we create object we copy whatever the class contains(except static)
-			means, only non-static is copied
+ 			means, only non-static is copied
 			Through object we can not call static things.
 
 * Constructor - Object creation happens with the help of constructor
@@ -302,7 +302,7 @@ Types of variables
 	static int a = 10;
 	static String sathya = "10";
 	
-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 	
 Access Modifier
 	* It defines where and who can use a method/variable/class
@@ -331,7 +331,7 @@ Access Modifier
 									 |         |           |            | 
 classA ( int a = 10)                 | yes     | yes       | yes        | yes
 									 |         |           |            |
-same package but sub class           | yes     | no        | yes        | yes
+same package but sub class           | yes     | no        | yes        | yes 
 									 |         |           |            |
 same package but non sub class       | yes     | no        | yes        | yes
 									 |         |           |            |
@@ -630,6 +630,8 @@ Methods in Java
 DAY 6 
 
 Interface in Java
+	* Creating interface within interface
+	* creating class within class
 
 Abstract class in details
 
@@ -711,7 +713,118 @@ Overriding
 * It happens between two classes (Parent and child class) - Inheritance concept
 * Method name should be same and parameter also should be same
 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+DAY 8 
 
+Constructor
+
+Topics we covered before
+	* Variables
+	* Methods
+	* Static
+	* return type
+	* Object creation
+	* Inheritance
+	* Overload
+	* Override
+	
+Once we see the basic of Constructor, we are going to implement all the above topics on Constructor
+
+Object creation
+
+ClassA obj = new ClassA();
+
+ClassA obj1 = new ClassA();
+ClassA obj2 = new ClassA();
+
+ClassA obj = new ClassA();
+ClassA obj = new ClassA(20);
+ClassA obj = new ClassA("Text");
+
+public void method() { }
+
+obj.method();
+obj.method(10);
+
+
+public ClassA() {
+
+}
+
+***************************************************************************************
+
+DAY 9
+
+Keywords in Java
+
+access modifiers
+data types
+class, interface, package, abstract
+return types, return
+extends, implements
+new
+if, for, while, do
+
+
+final
+static
+super
+this
+
+static
+ * always belongs to the class
+ * object creation not needed
+ * static members within a class - direct calling
+ * static members outside a class - className.staticMemberName
+ * we can overload static method
+ * we can not override static method
+ * In interface, we can create a methods with body but that method should be either static or default
+ 
+ 
+Final
+ * we have to initiate while declaring
+ * Once value its initalized, we cant change the value at any point
+ * we can use final with variables, methods and class
+
+************************************************************************************************
+
+DAY 10
+
+Super and this keywords
+
+super() and this() 
+
+*********************************************************************
+
+DAY 11
+
+Errors and Exceptions 
+
+try catch finally
+
+
+************************************************************************
+
+DAY 12
+
+Throw Throws Throwable
+
+
+********************************************************************
+
+DAY 13
+
+if 
+
+for
+
+for each
+
+break and continue
+
+debug
+
+multiple returns
 
 
 
