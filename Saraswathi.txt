@@ -862,6 +862,19 @@ int a = 1;
 int b = 24342;
 int c = 14350;
 
+*********************************************************
+
+DAY 16
+
+Array practice 
+
+1. Sort an array
+2. Reverse an array
+3. Comparing two arrays
+
+Arrays class 
+ 
+
 
 
 
