@@ -866,13 +866,21 @@ int c = 14350;
 
 DAY 16
 
-Array practice 
+AnyDesk issue - due to network. auto resolved
+
+practice below 
 
 1. Sort an array
 2. Reverse an array
 3. Comparing two arrays
 
-Arrays class 
+**********************************************************
+
+DAY 17
+
+Git issue - resolved
+
+Arrays class
  
 
 
