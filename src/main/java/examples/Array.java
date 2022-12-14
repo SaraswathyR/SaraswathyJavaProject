@@ -7,6 +7,7 @@ public class Array {
 	int arr1[]= {3,5,7,4,1};
 	int a[]= {10,30,60,80,40};
 	int b[]= {10,60,80,30,40};
+	int a1[]= {10,20};
 	
 	System.out.println("Reverse an array");
 	for (int i=arr.length-1; i>=0;i--) {
@@ -47,11 +48,35 @@ public class Array {
 	System.out.println(arr1[i]);
 	}
 
-//	
+System.out.println("Compare two array");
+if(a.length!=b.length) {
+	System.out.println("Enter array not equal");
+	}
+else
+	for(int i=0;i<a.length;i++) {
+		for (int j=i;j<a.length ;j++) {
+			if(a[i]==b[j])
+			
+		
+			System.out.println( a[i]);
+		}
+	}
+
+
+System.out.println("Swap two numbers");
+int temp=0;
+if (a1[0]!=a1[1]) {
+temp=a1[0];
+a1[0]=a1[1];
+a1[1]=temp;
+
+System.out.println(a1[0]);
+System.out.println(a1[1]);
 
 		
 	}
-	
+	  
+	}
 	
 	}
 

@@ -168,7 +168,7 @@ public class StringLearning {
 		System.out.println(s1.compareToIgnoreCase(s3));
 		System.out.println(s3.compareToIgnoreCase(s1));
 		
-//		startsWith() - checks if this string starts with the given prefix. 
+//		startsWith() - checks if this string starts with the given prefix. xx`
 //		It returns true if this string starts with the given prefix; else returns false.
 		System.out.println("**startsWith**");
 		String a = "Java Learning";
