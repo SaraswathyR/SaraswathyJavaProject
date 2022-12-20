@@ -59,7 +59,7 @@ public class ArrayListClass {
 	 * 			- and its own constructors
 	 *		SplitIterator() 
 	 *			- This method returns ArrayListSpliterator class
-	 *			- This class has some methos such as getFense(), trySplit(), etc..
+	 *			- This class has some methos such as getFense(), trySplit(),    ..
 	 *
 	 */
 	
@@ -103,15 +103,15 @@ public class ArrayListClass {
 		System.out.println(cars);
 		
 		cars.remove(1);
-		System.out.println(cars);
+		System.out.println(cars);    
 		
 //		cars.clear();
 //		System.out.println(cars);
 		
-//		Collections.sort(cars);
+//		Collections.sort(cars); 
 //		System.out.println(cars);
 		
-		ArrayList <String> cars1 = ArrayList<String>(); 
+		ArrayList<String> cars1 = ArrayList<String>(); 
 		cars.clone();
 		System.out.println(cars1);
 		

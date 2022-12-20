@@ -75,7 +75,7 @@ static int a2;
 		 s=list.containsAll(a1);
 		 System.out.println(s);
 		 
-		 System.out.println("*** To increase the capacity of Arraylist ***");
+		 System.out.println("*** To increase the  city of Arraylist ***");
 		 a1.ensureCapacity(10);
 		 a1.add(9);
 		 a1.add(10);
