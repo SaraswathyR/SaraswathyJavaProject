@@ -210,6 +210,17 @@ public class ArrayListForAllMethods {
 			System.out.println(al);
 			System.out.println(al2);
 			
+			System.out.println("Before reverse an elements");
+			System.out.println(al);
+			System.out.println(al2);
+			Collections.reverse(al);
+			Collections.reverse(al2);
+			
+			System.out.println("After reversing an elements");
+			System.out.println(al);
+			System.out.println(al2);
+			
+			
 			System.out.println("Trim to size");
 			al2.trimToSize();
 			System.out.println(al2);
