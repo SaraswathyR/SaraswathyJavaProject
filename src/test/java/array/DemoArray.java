@@ -151,7 +151,7 @@ public class DemoArray {
 
 		for (int i = 0; i < arrayS; i++) {
 			arr[i] = scan.nextInt();
-		}
+		} 
 
 		printIntArrayUsingBasicForLoop(arr);
 	}
