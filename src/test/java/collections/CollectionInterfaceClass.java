@@ -160,10 +160,12 @@ import java.util.Collection;
 
 public class CollectionInterfaceClass  {
 	
-	ArrayList
+//	ArrayList
 	
-	Iterable
+//	Iterable
 	
-	Collections
+//	Collections
+	
+	HashMap
 
 }
