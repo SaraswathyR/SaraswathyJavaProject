@@ -71,6 +71,28 @@ public class ArrayListPractice {
 		   list.removeAll(list);
 		   System.out.println(list);
    }
+	
+	public void printAnArrayListUsingForEach(ArrayList<Integer> al) {
+		 for(Integer each:al) {
+		    	System.out.println(each);
+		    }
+	}
+	
+	public void removeFromArrayList(Integer a) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(1);
+		list.add(2);
+		list.add(1,0);
+		list.add(4);
+		
+		list.remove(a);
+		System.out.println(list);
+	}
+	
+	public void removeFromArrayList(ArrayList<Integer> list, Integer a) {
+		list.remove(a);
+		System.out.println(list);
+	}
    
 	}
 	

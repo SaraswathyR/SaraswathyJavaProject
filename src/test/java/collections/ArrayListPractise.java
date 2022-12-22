@@ -247,6 +247,9 @@ static int a2;
 		List<Integer> li=a1.subList(5, 11);
 		System.out.println(li);
 		
+		List<Integer> li1=a1.subList(4, 10);
+		System.out.println(li1);
+		
 		Object[] o = a1.toArray();
 		System.out.println(o);
 		

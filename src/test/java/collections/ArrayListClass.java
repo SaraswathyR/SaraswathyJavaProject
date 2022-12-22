@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Spliterator;
 import java.util.function.Consumer;
 
 public class ArrayListClass {
@@ -111,16 +112,15 @@ public class ArrayListClass {
 //		Collections.sort(cars); 
 //		System.out.println(cars);
 		
-		ArrayList<String> cars1 = ArrayList<String>(); 
-		cars.clone();
+		ArrayList<String> cars1 = (ArrayList<String>)cars.clone(); 
 		System.out.println(cars1);
 		
 		System.out.println("******forEach method******");
-		cars1.forEach(a -> System.out.println(a)); //lambda expression
+		cars1.forEach(eachCars1 -> System.out.println(eachCars1)); //lambda expression
 		
 		System.out.println("******forEachRemaining method******");
-		Iterator newcars = cars1.iterator();
-		newcars.forEachRemaining(a -> System.out.println(a));
+		Iterator carsIterator = cars1.iterator();
+		carsIterator.forEachRemaining(eachCars -> System.out.println(eachCars));
 		
 		System.out.println("******Using Iterator********");
 		Iterator<String> iterator = cars.iterator();
@@ -130,14 +130,34 @@ public class ArrayListClass {
 		}
 		
 		System.out.println("******Using ListIterator********");
-		List<String> coolStringList = Arrays.asList("Java", "Scala", "Groovy");	
+//		List<String> coolStringList = Arrays.asList("Java", "Scala", "Groovy");
+		List<String> coolStringList = new ArrayList<String>();
+		coolStringList.add("Java");
+		coolStringList.add("Scala");
+		coolStringList.add("Groovy");
+		
+		
 		ListIterator <String> listIterator = coolStringList.listIterator();
+		System.out.println("++++" +listIterator.hasNext());
+		System.out.println("&&&&&&&&&"+listIterator.next());
+		
+//		ListIterator <String> listIterator1 = coolStringList.listIterator();
+		while(listIterator.hasNext()) {
+			System.out.println(listIterator.next());
+		}
+		
+		
+		System.out.println("++++" +listIterator.hasPrevious());
 		while(listIterator.hasPrevious()) {
 			System.out.println(listIterator.previous());
 //			String name3 = listIterator.previous();
 //			System.out.println(name3);
 		}
 		
+		Spliterator<String> splitIterator = coolStringList.spliterator();
+		System.out.println("sathyaaaaaaaa");
+		System.out.println(splitIterator.estimateSize());
+		System.out.println(splitIterator.ORDERED);
 		
 		
 		ArrayList list = new ArrayList();
@@ -146,8 +166,5 @@ public class ArrayListClass {
 		list.add(0.1f);
 		System.out.println(list);
 		
-		ArrayList <String> name = new ArrayList <String> ();
-		name.add("Shiva");
-//		name.add(1);
 	}
 }

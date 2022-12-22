@@ -67,6 +67,8 @@ public class ArrayListForAllMethods {
 		al2.add(3);
 		al2.add(4);
 		al2.add(5);
+		ArrayListPractice alp = new ArrayListPractice();
+		alp.printAnArrayListUsingForEach(al2);
 		System.out.println(al2);
 		
 		System.out.println("Checking presence of collection elements in other");
@@ -79,12 +81,15 @@ public class ArrayListForAllMethods {
 		System.out.println(al2.containsAll(al));
 		
 		System.out.println("To increase capacity");
-		al2.ensureCapacity(10);
 		al2.add(11);
 		al2.add(12);
 		al2.add(13);
 		al2.add(14);
 		al2.add(15);
+		al2.ensureCapacity(1000);
+		System.out.println(al2.size());
+		al2.trimToSize();
+		System.out.println(al2.size());
 		System.out.println(al2);
 		
 		System.out.println("Find 2 arrays equal");
@@ -139,7 +144,8 @@ public class ArrayListForAllMethods {
 		 System.out.println(present);
 		
 	
-		 System.out.println("To get the lastIndex in an array");
+		 System.out.println("To get the lastIndex in an ArrayList");
+		 System.out.println("++++"+al2);
 		 in=al2.lastIndexOf(3);
 		 System.out.println(in);
 		 
@@ -224,6 +230,14 @@ public class ArrayListForAllMethods {
 			System.out.println("Trim to size");
 			al2.trimToSize();
 			System.out.println(al2);
+			
+			ArrayListForAllMethods alf = new ArrayListForAllMethods();
+			alf.checkAnArrayListHasTheGivenValue(al2, 10);
+			alf.checkAnArrayListHasTheGivenValue(al2, 11);
+	}
+	
+	public void checkAnArrayListHasTheGivenValue(ArrayList<Integer> al, Integer a) {
+		System.out.println(al.contains(a));
 	}
 	
 	
