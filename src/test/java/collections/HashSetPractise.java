@@ -72,7 +72,7 @@ public class HashSetPractise {
 		HashSet<Integer> sthree= new HashSet<Integer>();
 		
 		System.out.println("Adding elements in Hashset");
-//		Doesnot return the duplicate values when we print
+//		Does not return the duplicate values when we print
 		sone.add(1);
 		sone.add(2);
 		sone.add(3);
