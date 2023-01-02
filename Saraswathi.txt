@@ -953,8 +953,20 @@ Collections class
 
 ***************************************************************************
 
-DAY 23
+DAY 23 (02/01/2023)
 
+File readings
+
+1. Text file
+2. Prop file
+3. Config file
+4. Excel file (Apache POI api and Fillo api)
+5. CSV file
+6. SQL Execution
+
+Similarly
+
+You can create any files, delete any files, read or write file
 
 
 
