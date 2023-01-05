@@ -1112,7 +1112,214 @@ findElement(By.parialLinkText("Frameworks"));
 * When id, name, className attributes are not present inside an element's tag, then also we use xpath
 
 
+*******************************************************************************
+
+DAY 25 (04/01/2023)
+
+What is WebElement 
+	* It is a interface which follows SearchContext
+	
+click();
+submit();
+sendKeys();
+clear();
+getTagName();
+getDomAttribute();
+getAttribute();
+isSelected();
+isEnabled();
+getText();
+findElement();
+findElements();
+isDisplayed();
+getLocation();
+getSize();
+getRect();
+getCssValue();
+
+
+XPATH - xml path
+
+two types of xpath
+
+absolute xpath - steps 
+	* uses single slash - /html/body/header/div/nav/a[1]
+	/html/body/div/div/div[2]/div/ul/li/div/div[2]/a
+	/html/body/div/div/div[2]/div/ul/li[1]/div/div[2]/a
+	
+relative xpath - lift
+	* uses double slash
+	
+crocs.in
+
+* Basic syntax
+		//tagName[@attribute = 'value']
+		(//span[@class='menuLink-title-J7d'])[1]
+		(//*[@class='menuLink-title-J7d'])[1]
+
+* text
+//tagName[text() = 'value']
+
+* and 
+//span[text() = 'Women' and @class='menuLink-title-J7d']
+
+* or 
+//span[@std ='first' or @class='menuLink-title-J7d'] 
+
+
+//span[contains(text(), 'Classic Crush White Unisex Clog')]
+
+//a[@class = 'item-name-suo']/span[contains(text(), 'Classic Crush White Unisex Clog')]
+
+
+
+When element is not found - we get elementNotFoundException
+
+Why element is not found, because we wrongly identified the element
+1) spelling mistake
+2) flow mistake
+3) xpath wrong
+		
+https://www.guru99.com/xpath-selenium.html#text
+https://www.guru99.com/locators-in-selenium-ide.html
+
+
+
+*******************************************************************************
+
+DAY 26 (05/01/2023)
+
+
+
+Who is brower? 
+
+Browsers
+* Chrome
+* Firefox
+* MS edge
+* Opera Mini
+* UC browser
+
+How they used browser in Selenium 
+
+
+
+Diff between Chrome browser and Chrome driver 
+
+	We have to use specific driver for specific version of a browser
+	
+chrome - ChromeDriver - we need to download chromeDriver.exe, while running code, we have to let WebDriver about its path.
+Instead of running chrome.exe from our system, we ask webDriver to run ChromeDriver.exe
+For each browser, we need to take compatible version of its driver.
+for eg: For chrome version 107, we need to download chrome driver version 107.
+Basically we keep the chromeDriver.exe files inside project but we dont push them into git
+
+In order to avoid compatibility issue, we have a concept called WebDriverManager
+
+firefox - geckoDriver
+
+
+
+
+
+
+
+
+How to use selenium in Eclipse 
+1. We have add selenium dependency in our project
  
+
+Hirarchy 
+* SearchContext Interface (findElement, findElements)
+* WebDriver Interface ( Basic methods for a browser) 
+* RemoteWebDriver Class( all basic methods are implemented here)
+* Classes ChromeDriver, FirefoxDriver, etc..  
+
+SearchContext 
+ 1) WebElement findElement(By by) 
+ 		WebDriver.findElement(By.id(""));
+ 		WebDriver.findElement(By.xpath("//strong[text() =  'ChromeDriver 108.0.5359.22']");
+ 
+ 2) List<WebElement> findElements(By by)
+ 		List<WebElement> allElements = WebDriver.findElements(By.id(""));
+ 		for(WebElement eachElement : allElelments) {
+ 		}
+ 
+WebDriver 
+get()
+  * In this method only we pass application URL
+currentUrl()
+	* It gives currently focused window's URL. So that we can validate against requirement that, URL is correct 
+close()
+ 	* Closes the currently focused window
+quite()
+	* Closes all the window's opened during the session
+getPageSource()
+	*
+
+@override
+findElement()
+findElements()
+
+getTitle()
+	* Gives the title of the window (tab tile) 
+getWindowHandle()
+	* It gives current window's handle
+	* Its good practice to use getWindowHandle() method, before using getWindowHandles() method
+	* This methods return type is String
+	
+getWindowHandles()
+	* It gives all window's handles opened during that session
+	* This methods return type is Set<String>
+	
+TargetLocator switchTo()
+	WebDriver frame(int index);
+	WebDriver frame(String nameOrId);
+	WebDriver frame(WebElement frameElement);
+	WebDriver parentFrame();
+
+	
+	1) find the frame - means identify the element for the frame
+		- we can identify the frame using 3 things.
+			1. using index
+			2. frameName
+			3. by finding element for the frame
+	2) switchTo().frame()
+	3) do some action on any element inside the frame 
+	4) switchTo().defaultContent();
+	
+	WebDriver window(String nameOrHandle);
+		****WebDriver.switchTo().window();*******
+		
+		String parentWindowHandle = WebDriver.getWindowHandle();
+		Set<String> allWindowHandles = WebDriver.getWindowHandles();
+		for(String eachWindowHandle : allWindowHandles) {
+			if(!eachWindowHandle.equals(parentWindowHandle)) {
+				WebDriver.switchTo().window(eachWindowHandle);
+				}
+			}
+		
+	WebDriver newWindow(WindowType typeHint);
+	WebDriver defaultContent();
+	WebElement activeElement();
+
+
+
+	Alert alert();
+		dismiss();
+		accept();
+		getText();
+		sendKeys();
+		
+switchTo().frame()
+switchTo().window()
+switchTo().alert()
+switchTo().newWindow()
+switchTo().alert().dismiss();
+switchTo().alert().accept();
+switchTo().alert().getText().toUpperCase();
+
+
 
 
 
