@@ -1,6 +1,7 @@
 package seleniumBasics;
 
 import java.time.Duration;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,6 +11,36 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BasicSeleniumCode {
 
 	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_107.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get("https://en-gb.facebook.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		System.out.println(driver.getCurrentUrl());
+		
+		String title = driver.getTitle();
+		System.out.println(title);
+		
+		System.out.println(driver.getPageSource());
+		
+		String parentWindowHandle = driver.getWindowHandle();
+		System.out.println(parentWindowHandle);
+		
+		Set<String> allWindowHandles = driver.getWindowHandles();
+		System.out.println(allWindowHandles);
+		
+		driver.close();
+		
+	}
+	
+	
+	
+	public void testMethod() {
+
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\VinothiniJavaProject\\drivers\\chromedriver_107.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -45,6 +76,7 @@ public class BasicSeleniumCode {
 		
 		
 		
+	
 	}
 
 }

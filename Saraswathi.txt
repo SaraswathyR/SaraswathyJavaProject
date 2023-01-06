@@ -1320,6 +1320,55 @@ switchTo().alert().accept();
 switchTo().alert().getText().toUpperCase();
 
 
+*******************************************************************************
+
+DAY 27 (06/01/2023)
+
+WebDriver methods 
+
+Navigation navigate();
+	* back()
+	* forward()
+	* to()
+	* refresh()
+	
+Option manage()
+	* Timeouts timeouts()
+		* implicitWait()
+		* explicitWait()
+	* Window window()
+		* setWindow()
+		* maximize()
+		* minimize()
+	* getCookies()
+	* deleteCookies()
+	
+	
+
+RemoteWebDriver
+
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_107.exe");
+ChromeDriver driver = new ChromeDriver();
+
+But we do not need to create object like above. Because it will cause a problem when we need to open different browser in single driver instance
+
+To avoid this we keep WebDriver interface as reference for object
+
+WebDriver interface and ChromeDriver/FirefoxDriver/SafariDriver/EdgeDriver are connected through RemoteWebDriver class
+
+All the methods in WebDriver interface are implemented in RemoteWebDriver.
+
+All browser drivers are extended to RemoteWebDriver
+
+
+
+
+
+Selenium Basic code 
+
+
+
+
 
 
 

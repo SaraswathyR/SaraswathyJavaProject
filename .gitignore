@@ -1,2 +1,7 @@
 /target/
-/.classpath
+.classpath
+.project
+.settings/
+/test-output/
+/drivers/
+.cucumber/
