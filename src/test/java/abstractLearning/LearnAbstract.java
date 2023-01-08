@@ -1,4 +1,5 @@
-package abstractLearning;
+
+ package abstractLearning;
 
 public class LearnAbstract {
 

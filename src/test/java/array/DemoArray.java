@@ -1,4 +1,4 @@
-//	* Container object that holds the fixed number of values of a same datatype
+  //	* Container object that holds the fixed number of values of a same datatype
 //	* In Java, array is a non primitive data type
 //	* It also holds String (non-primitive data type), primitive data type, classes, Objects
 //	* Array index always starts with zero
