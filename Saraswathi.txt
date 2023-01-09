@@ -1360,12 +1360,17 @@ All the methods in WebDriver interface are implemented in RemoteWebDriver.
 
 All browser drivers are extended to RemoteWebDriver
 
-
-
-
-
 Selenium Basic code 
 
+*******************************************************************************************
+
+DAY 28 (09/01/2023)
+
+What is functional level testing and application level testing
+
+We need to include application level testing in our functional level testing to make our testing better
+
+For that, we use TestNG or Junit for validation
 
 
 

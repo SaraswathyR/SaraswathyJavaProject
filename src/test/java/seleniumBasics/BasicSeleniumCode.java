@@ -6,11 +6,42 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class BasicSeleniumCode {
 
 	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_107.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		String loginText = driver.findElement(By.xpath("//h5[text() = 'Login']")).getText();
+		
+		if(loginText.equals("Login")) {
+			System.out.println("We are on login page");
+		}
+		
+		Assert.assertEquals(loginText, "Login");
+		
+		Assert.assertEquals(driver.getTitle(), "OrangeHRM");
+		
+		WebElement login_Text = driver.findElement(By.xpath("//h5[text() = 'Login']"));
+		
+		Assert.assertTrue(login_Text.isDisplayed());
+	}
+	
+	
+	
+	
+	public void testMethod1() {
+
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_107.exe");
 		WebDriver driver = new ChromeDriver();
@@ -35,10 +66,8 @@ public class BasicSeleniumCode {
 		
 		driver.close();
 		
+	
 	}
-	
-	
-	
 	public void testMethod() {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\VinothiniJavaProject\\drivers\\chromedriver_107.exe");
