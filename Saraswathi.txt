@@ -1372,10 +1372,30 @@ We need to include application level testing in our functional level testing to 
 
 For that, we use TestNG or Junit for validation
 
+*******************************************************************************************
+
+DAY 29 (24/01/2023)
+
+What is sessionID in selenium
+
+Thread.sleep(5000)
+
+driver.close() and driver.quit()
+
+soft assert and hardAssert
 
 
+*************************************************************************************
 
-
+* Window Handle
+* Alert
+* frames
+* drop down
+* Actions (Mouse actions)
+* Robot (Keyboard + mouse actions)
+* screenshot method
+* wait
+* WebTable
 
 
 

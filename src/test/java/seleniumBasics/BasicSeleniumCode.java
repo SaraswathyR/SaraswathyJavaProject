@@ -8,14 +8,18 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 
 public class BasicSeleniumCode {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_107.exe");
+		System.out.println(System.getProperty("user.dir"));
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_109.exe");
 		WebDriver driver = new ChromeDriver();
+		
+		System.out.println(((RemoteWebDriver)driver).getSessionId());
 		
 		driver.manage().window().maximize();
 		
@@ -30,11 +34,18 @@ public class BasicSeleniumCode {
 		
 		Assert.assertEquals(loginText, "Login");
 		
+		System.out.println("Testing is continuing");
+		
 		Assert.assertEquals(driver.getTitle(), "OrangeHRM");
 		
 		WebElement login_Text = driver.findElement(By.xpath("//h5[text() = 'Login']"));
 		
 		Assert.assertTrue(login_Text.isDisplayed());
+		
+		Thread.sleep(5000);
+		
+//		driver.close();
+		driver.quit();
 	}
 	
 	
@@ -64,6 +75,12 @@ public class BasicSeleniumCode {
 		Set<String> allWindowHandles = driver.getWindowHandles();
 		System.out.println(allWindowHandles);
 		
+		driver.navigate().to("https://www.facebook.com/");
+		driver.navigate().back();
+		
+		boolean elementIsDisplayed = driver.findElement(By.xpath("//h5[text() = 'Elements']")).isDisplayed();
+		System.out.println(elementIsDisplayed);
+		
 		driver.close();
 		
 	
@@ -91,6 +108,9 @@ public class BasicSeleniumCode {
 		
 		boolean elementIsDisplayed = driver.findElement(By.xpath("//h5[text() = 'Elements']")).isDisplayed();
 		System.out.println(elementIsDisplayed);
+		
+		WebElement element1 = driver.findElement(By.xpath("//h5[text() = 'Elements']"));
+//		element1.
 		
 //		driver.findElement(By.xpath("//h5[text() = 'Elements']")).click();
 		
