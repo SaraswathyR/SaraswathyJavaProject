@@ -1384,11 +1384,49 @@ driver.close() and driver.quit()
 
 soft assert and hardAssert
 
+Recap
 
 *************************************************************************************
 
+DAY 30 (25/01/2023)
+
 * Window Handle
-* Alert
+
+* each window has a unique id - window handle
+
+getWindowHandle();
+getWindowHandles();
+
+
+Alert
+
+* When alert comes, we cant do anything on the original web page.
+* Alert needs to be handled
+	* first we need to switch to the alert
+	* use try catch to  check alert is present
+* There are 3 types
+	* Informational alert - OK button alone will present with some text
+		alert.accept();
+		alert.getText();
+	* Yes or No alert
+		alert.accept();
+		alert.dismiss();
+		alert.text();
+	* Text Alert
+		alert.sendKeys("");
+		alert.accept();
+		alert.dismiss();
+		alert.text();
+
+To handle alert 
+
+
+
+**************************************************************************************
+
+
+
+
 * frames
 * drop down
 * Actions (Mouse actions)
