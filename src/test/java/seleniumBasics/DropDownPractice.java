@@ -1,5 +1,6 @@
 package seleniumBasics;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -13,44 +14,46 @@ public class DropDownPractice {
 
 	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver",
-				"C:/Users/prabu/git/VinothiniJavaProject/src/test/resources/drivers/chromedriver_107.exe");
+				"C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_109.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.hyrtutorials.com/p/html-dropdown-elements-practice.html");
-
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		
 		WebElement courseDropDown = driver.findElement(By.id("course"));
 		courseDropDown.click();
 
 		driver.findElement(By.xpath("//option[text() = 'Javascript']")).click();
 
-		courseDropDown.click();
+//		WebElement courseDropDown = driver.findElement(By.id("course"));
+
+//		courseDropDown.click();
 
 //		Thread.sleep(3000);
 //
-//		Select select = new Select(courseDropDown);
+		Select select = new Select(courseDropDown);
 //
-//		System.out.println(select.isMultiple());
+		System.out.println(select.isMultiple());
 //
-//		select.selectByIndex(3);
+		select.selectByIndex(3);
 //
-//		Thread.sleep(3000);
+		Thread.sleep(5000);
 //
-//		select.selectByValue("net");
+		select.selectByValue("net");
 //
-//		Thread.sleep(3000);
+		Thread.sleep(5000);
 //
-//		select.selectByVisibleText("Java");
+		select.selectByVisibleText("Java");
 //
-//		List<WebElement> courseAllOptions = select.getOptions();
-//		for (WebElement each : courseAllOptions) {
-//			System.out.println(each.getText());
-//		}
+		List<WebElement> courseAllOptions = select.getOptions();
+		for (WebElement each : courseAllOptions) {
+			System.out.println(each.getText());
+		}
 
 	}
 
-	public void selectByValue(String value) {
-		WebElement courseDropDown = driver.findElement(By.id("course"));
-		Select select = new Select(courseDropDown);
+	public void selectByValue(WebElement ele, String value) {
+		Select select = new Select(ele);
 		select.selectByValue(value);
 	}
 

@@ -1424,16 +1424,33 @@ To handle alert
 
 **************************************************************************************
 
-
+DAY 31 (26/01/2023)
 
 
 * frames
+
+* driver.switchTo().frame(frameIndex/frameName/frameElement);
+* driver.switchTo().defaultContent(); -take you to either first frame or main content
+* driver.switchTo().parentFrame(); - take you to parent frame
+
 * drop down
-* Actions (Mouse actions)
-* Robot (Keyboard + mouse actions)
+	* element should present in select tag
+	* We can select a drop down using 
+		selectByIndex(0);
+		selectByValue(string);
+		selectByVisibleText(string);
+
+
+* Actions (Mouse actions + keyboard)
+ * check ActionClassPractice class
+
+
+
+* Robot (Keyboard + mouse actions + document upload)
 * screenshot method
 * wait
 * WebTable
+* scrolling
 
 
 

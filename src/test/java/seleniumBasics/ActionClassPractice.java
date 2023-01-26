@@ -15,7 +15,7 @@ public class ActionClassPractice {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\LENOVO\\git\\VinothiniJavaProject\\drivers\\chromedriver_107.exe");
+				"C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_109.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.crocs.in/");
@@ -25,18 +25,30 @@ public class ActionClassPractice {
 				.findElement(By.xpath("//span[text() = 'Women' and @class = 'menuLink-title-J7d']"));
 
 		Actions actions = new Actions(driver);
-		actions.moveToElement(womenTab).build().perform();
+//		actions.moveToElement(womenTab).build().perform();
 		
 	
 //		actions.contextClick(womenTab).build().perform();
 		
-		actions.contextClick().sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
+//		actions.contextClick().sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
+		
+		actions.moveToElement(womenTab).contextClick().pause(5000)
+		.keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN)
+		.keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
 
 	}
 
 	public void clickAnElementUsingActions(WebElement ele) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(ele).build().perform();
+	}
+	
+	public void pressAKeyUsingActionsClass(String keyName) {
+		Actions actions = new Actions(driver);
+		switch(keyName) {
+		case "a":
+//			actions.keyDown(Keys.)
+		}
 	}
 
 }
