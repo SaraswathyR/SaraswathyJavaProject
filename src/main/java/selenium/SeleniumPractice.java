@@ -3,7 +3,7 @@ package selenium;
 import java.time.Duration;
 import java.util.Set;
  
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,9 +16,10 @@ public class SeleniumPractice {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\git\\SaraswathyJavaProject\\Drivers\\chromedriver.exe");
-		WebDriver driver= new ChromeDriver();
+		SeleniumPractice SePa = new SeleniumPractice();
+		SePa.launchChromeBrowser();
 		driver.manage().window().maximize();
-		driver.get("https://www.crocs.in/");
+		driver.get("https://www.facebook.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getTitle());
@@ -27,18 +28,12 @@ public class SeleniumPractice {
 		System.out.println(ParentWindowHandle);
 		Set<String> AllWindowHandles=driver.getWindowHandles();
 		System.out.println(AllWindowHandles);
-	
+		
+	}		
 		
 		
-		
-		                                                                                                                                                                                                                                                                                  
-		
-		
-
-	}
-	
-	
-	public void launchChromeBrowser() {
+		                                                                                                                                                                                                                                                                                 
+public void launchChromeBrowser() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\git\\SaraswathyJavaProject\\Drivers\\chromedriver.exe");
 		driver= new ChromeDriver();
 		
