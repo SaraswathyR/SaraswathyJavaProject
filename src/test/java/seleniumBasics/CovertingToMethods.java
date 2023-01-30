@@ -1,3 +1,4 @@
+
 package seleniumBasics;
 
 import org.openqa.selenium.By;
@@ -42,6 +43,7 @@ public class CovertingToMethods {
 		driver.findElement(By.id("email")).sendKeys("Sathya08ece@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("TestSathya@123");
 		driver.findElement(By.name("login")).click();
+
 	}
 	
 	public void OpenBrowserWithParameter(String browserName) {
