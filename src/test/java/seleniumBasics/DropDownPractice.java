@@ -1,4 +1,4 @@
-package seleniumBasics;
+ package seleniumBasics;
 
 import java.time.Duration;
 import java.util.List;
