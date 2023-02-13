@@ -1445,12 +1445,23 @@ DAY 31 (26/01/2023)
  * check ActionClassPractice class
 
 
+*************************************************************************************************
+
+DAY 31 (13/02/2023)
+
+Revisiting actions class and its methos 
+
+
+
+***********************************************************************************************
+
 
 * Robot (Keyboard + mouse actions + document upload)
 * screenshot method
 * wait
 * WebTable
 * scrolling
+* Java script Executor
 
 
 
