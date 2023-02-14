@@ -24,9 +24,11 @@ public class ActionClass {
 		
 		Actions actions = new Actions(driver);
 		
-		actions.moveToElement(womentab).contextClick().pause(5000).
-		keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN).
-		keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
+//		actions.moveToElement(womentab).contextClick().pause(5000).
+//		keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN).
+//		keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
+		
+		actions.scrollByAmount(1000, 1000).build().perform();
 		
 		
 		
