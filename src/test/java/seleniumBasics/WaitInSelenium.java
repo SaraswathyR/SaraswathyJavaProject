@@ -97,5 +97,11 @@ public class WaitInSelenium {
 
 		}
 	}
+	
+	//WebElemet userName = driver.findElement(By.id(""));
+	public void waitForElementToBeClickable(WebElement ele, long seconds) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+		wait.until(ExpectedConditions.elementToBeClickable(ele));
+	}
 
 }
