@@ -1500,10 +1500,43 @@ https://chercher.tech/java/take-screenshot-selenium-webdriver
 
 *****************************************************************************************************
 
+DAY 33 (15/02/2023)
 
 * WebTable
+
+* Table present in web pages are called Web Table
+* First we need to find the table element. Mostly it is available with tag named as <table>
+* tr - Row (including header)
+* th - Header values
+* td - data present in each column of the row except header
+
+questions would be
+
+	* get total row
+	* get header value
+	* get all row values
+	* get a specific row's values
+	* find given text is present in table
+	* find the respective first column value of the given text
+**********************
 * scrolling
-* Java script Executor
+	* Scroll bar is not a part of web application
+	* So it cant be automated using selenium directly
+	* We can scroll a web page using 
+		* Actions (mouse, keyBoard)
+		* Robot (mouse, keyBoard)
+		* Java script Executor
+			* By using JSE, we can do many actions (Whenever Selenium or Actions class or Robot class methods are not helpful)
+				* click
+				* scroll
+				* send text
+				* scroll until element is visible
+
+scrolling 
+	 JavascriptExecutor js = (JavascriptExecutor)driver;
+	 js.executeScript(“window.scrollBy(0,150)”);
+	 
+
 
 
 

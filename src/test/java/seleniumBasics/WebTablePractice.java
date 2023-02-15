@@ -16,18 +16,23 @@ public class WebTablePractice {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-//				"C:\\Users\\LENOVO\\git\\VinothiniJavaProject\\drivers\\chromedriver_107.exe");
-//				"C:/Users/prabu/git/VinothiniJavaProject/src/test/resources/drivers/chromedriver_107.exe");
+				"C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_109.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-//		driver.get("file:///C:/Users/LENOVO/Desktop/webTable.html");
-		driver.get("D:\\Learnings\\WebTable.html");
+		driver.get("C:/Users/LENOVO/Desktop/webTable.html");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		table = driver.findElement(By.tagName("table"));
-		// table[@name = 'Table']//tr
 		tableRows = table.findElements(By.tagName("tr")).size();
 		System.out.println(tableRows);
+		
+		WebTablePractice WTP = new WebTablePractice();
+//		WTP.getAllHeadersFromTable(table);
+		
+		validateGivenTextPresentInGivenRow(3, "700");
+	}
+	
+	public void test() {
 
 		// table[@name = 'Table']//tr[1]/th
 		System.out.println("*************");
@@ -75,10 +80,11 @@ public class WebTablePractice {
 		List<WebElement> rowText = driver.findElements(By.tagName("tr"));
 		for (int i = 1; i < tableRows; i++) {
 			if (i == row) {
-				List<WebElement> allHeaders = rowText.get(i).findElements(By.tagName("td"));
-				for (WebElement eachHeader : allHeaders) {
-					System.out.println(eachHeader.getText());
+				List<WebElement> allData = rowText.get(i).findElements(By.tagName("td"));
+				for (WebElement eachData : allData) {
+					System.out.println(eachData.getText());
 				}
+				break;
 			}
 		}
 	}
@@ -88,10 +94,11 @@ public class WebTablePractice {
 		int temp = 0;
 		for (WebElement eachRow : rowText) {
 			if (temp == row) {
-				List<WebElement> allHeaders = eachRow.findElements(By.tagName("td"));
-				for (WebElement eachHeader : allHeaders) {
-					System.out.println(eachHeader.getText());
+				List<WebElement> allData = eachRow.findElements(By.tagName("td"));
+				for (WebElement eachData : allData) {
+					System.out.println(eachData.getText());
 				}
+				break;
 			}
 			temp++;
 		}
@@ -122,10 +129,12 @@ public class WebTablePractice {
 		List<WebElement> rowText = driver.findElements(By.tagName("tr"));
 		for (int i = 1; i < tableRows; i++) {
 			if (i == row) {
-				List<WebElement> allHeaders = rowText.get(i).findElements(By.tagName("td"));
-				for (WebElement eachHeader : allHeaders) {
-					if (eachHeader.getText().equalsIgnoreCase(text)) {
-						System.out.println(eachHeader.getText());
+				List<WebElement> allData = rowText.get(i).findElements(By.tagName("td"));
+				for (WebElement eachData : allData) {
+					if (eachData.getText().equalsIgnoreCase(text)) {
+						System.out.println(eachData.getText());
+						int rowNum = i+1;
+						System.out.println(driver.findElement(By.xpath("//table[@name = 'Table']//tr["+rowNum+"]/td[1]")).getText());
 					}
 				}
 			}
