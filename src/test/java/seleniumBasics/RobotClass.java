@@ -56,7 +56,7 @@ public class RobotClass {
 //		driver.findElement(By.id("fileToUpload")).sendKeys("D:\\sathiya\\Text123.txt");
 		
 		System.out.println(driver.findElement(By.id("fileToUpload")).isEnabled());
-//		driver.findElement(By.name("fileToUpload")).click();
+  //		driver.findElement(By.name("fileToUpload")).click();
 //		driver.findElement(By.xpath("//input[@type='file']")).click();
 		
 		
