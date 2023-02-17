@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TestNGBasic {
 	WebDriver driver;
 	
-	@Test
+	@Test()
 	public void testCase1() {
 		System.out.println("I am @Test");
 		driver.get("https://en-gb.facebook.com/");
@@ -19,12 +19,16 @@ public class TestNGBasic {
 		driver.close();
 	}
 	
-	@BeforeMethod
+	@Test
 	public void launchBrowser() {
 		System.out.println("I am @Before Method");
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\VinothiniJavaProject\\drivers\\chromedriver_107.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_109.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+	}
+	
+	public static void main(String[] args) {
+		
 	}
 
 }
