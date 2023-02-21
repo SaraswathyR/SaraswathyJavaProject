@@ -1590,6 +1590,55 @@ Whenever we run as TestNG,
 	2) we also get the recently failed test case details --> emailable-report.html
 	3) For recently failed test cases, we get xml in testng-failed.xml
 	
+*************************************************************************************
+
+DAY 36 (18/02/2023)
+
+TestNG Annotations
+
+STATE CM - ST CM
+
+Order of annotation
+
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+@Test
+@AfterMethod
+@AfterClass
+@AfterTest
+@AfterSuite0
+
+priority = 1
+enabled = true/false
+always run = true/false
+invocation count = 3
+
+Parameters
+DataProviders
+DependsOnMethods
+Groups
+DependsOnGroups
+
+*****************************************************************************************
+
+DAY 37(20/02/2023)
+
+Parameters
+DataProviders
+Failed test cases (run using testng-failed.xml or retryAnalyser)
+
+*****************************************************************************************
+
+DAY 38 (21/02/2023)
+
+TestNG framework 
+
+Page factory
+Pages
+Base
+
 
 
 
