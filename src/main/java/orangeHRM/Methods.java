@@ -41,7 +41,7 @@ public class Methods {
 		Meth.launchbrowser();
 		Meth.maximizeBrowserWindow();
 		Meth.launchApplication("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		Meth.loginOrangeHRM(", null)
+
 		Meth.adminTab();
 	}
 }
