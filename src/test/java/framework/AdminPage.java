@@ -68,6 +68,16 @@ public class AdminPage {
 	@FindBy(xpath="//a[@class='oxd-topbar-body-nav-tab-link' and text()='Email Subscriptions']")
 	WebElement dropdownlink_EmailSubscriptions;
 	
+	@FindBy(xpath="//a[@class='oxd-topbar-body-nav-tab-link' and text()='Localization']")
+	WebElement dropdownlink_Localization;
+	
+	@FindBy(xpath="//a[@class='oxd-topbar-body-nav-tab-link' and text()='Language Packages']")
+	WebElement dropdownlink_LanguagePackages;
+	
+	@FindBy(xpath="//a[@class='oxd-topbar-body-nav-tab-link' and text()='Modules']")
+	WebElement dropdownlink_Modules;
+	
+	
 	
 	
 	
