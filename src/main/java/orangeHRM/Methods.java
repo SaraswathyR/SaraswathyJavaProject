@@ -22,7 +22,7 @@ public class Methods {
 	
 	public void launchApplication(String url) {
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 	}
 	
 	public void loginOrangeHRM(String userName, String password) {
@@ -42,6 +42,7 @@ public class Methods {
 		Meth.maximizeBrowserWindow();
 		Meth.launchApplication("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
-		Meth.adminTab();
+		Meth.loginOrangeHRM("Admin", "admin123");
+		
 	}
 }
