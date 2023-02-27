@@ -1642,12 +1642,104 @@ Base
 
 ************************************************************************************
 
-DAY 39, 40(23/02/2023)
+DAY 39(22/02/2023), 40(23/02/2023), 41(24/02/2023)
 
 	Practicing TestNG project with Demo OrangeHRM page
 	
 ****************************************************************************************
 
+DAY 42(27/02/2023)
+
+1) Integrate Extent report into our TestNG project by any means 
+2) Write at least 3 test cases for 4 pages min
+3) Try parallel running 
+
+
+Behaviour driven framework using Cucumber and Junit/TestNG (BDD Framework)
+
+* Need to install cucumber plug in for Eclipse
+* Need to add dependencies in your project 
+	* Cucumber-Java
+	* Cucumber-jvm
+	* Cucumber-junit
+	* Cucumber-core
+* Make sure that, all the above 4 dependencies need to have same version.
+* Right click on your project--> Configure ---> Convert to cucumber project 
+* We can run Cucumber with Junit as well as TestNG tool. Most preferable is Junit 
+
+* When we go for it
+* When we create a framework, we have below files
+	* Base class - where we initiate our driver
+	* Utilities class - where we have commonly used methods
+	* POM structure - separate class for each page (Page Object and Page factory)
+	* Test case class 
+* What are the 3 important files
+	* Features folder (create inside test/resources folder.. eg. LoginPage.feature(file) ) - This is where we keep our test cases in simple english format(Gherkin language)
+	* Step definition (Java file)
+		* Java and selenium codes present in each pages class. 
+		* Test cases present in feature files
+		* Step definition files works as a link between coding and test cases
+	* Runner (java file)
+		* This is where our testing starts
+		* feature file - path of specific file or features files folder
+		* tag - test case tag name
+		* Step def path - path of the specific step def or entire package name 
+* Gherkin language
+	* Given 
+	* When 
+	* Then
+	* And
+	* But
+
+* Feature file
+	* Feature 
+	* Scenario (Test case)
+	* How to pass parameters
+	* Scenario Outline
+	* Examples
+	* Background
+
+* Step definision
+	* How to create it easily
+	
+* Runner file
+	* This is where execution starts
+	
+Cucumber Structure
+
+ProjectName
+	src/main/java
+	src/main/resources
+	src/test/java
+		Base package
+			Base class - where we initiate web driver
+			CommonMethods class
+		Utilities package
+			Property reader class
+			Excel reader class
+			CSV file reader class
+		Pages package (POM with Page objects and Page factory)
+			Each pages class
+		Step definition package
+			Step definition files
+		Runner package
+			Runner files
+	src/test/resources
+		Features (folder)
+			* Each feature files
+			* property file
+			* excel sheet 
+			* Text files 
+	drivers folder
+		* Where we keep all the browser exe files
+	target folder
+		* This is where compile codes where present (.class file)
+	test-output 
+		* Reports
+		* screenshots
+	pom.xml
+		* This is where we keep our dependencies
+	
 
 
 
