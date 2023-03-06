@@ -1648,7 +1648,7 @@ DAY 39(22/02/2023), 40(23/02/2023), 41(24/02/2023)
 	
 ****************************************************************************************
 
-DAY 42(27/02/2023)
+DAY 42(27/02/2023), 43(28/02/2023), 44(01/03/2023), 45(02/03/2023), 46(05/03/2023)
 
 1) Integrate Extent report into our TestNG project by any means 
 2) Write at least 3 test cases for 4 pages min
@@ -1740,8 +1740,73 @@ ProjectName
 	pom.xml
 		* This is where we keep our dependencies
 	
+********************************************************************************
+
+42(06/03/2023)
+
+Framework reports and basic knowledges on interview and work
+
+*******************************************************************************
+
+Agile
 
 
+
+Two kind of methodology
+1. Agile
+2. Water fall.
+
+Difference between waterfall and agile 
+
+Agile methodology
+
+key words 
+
+Scrum time period or Agile time period  (Iteration)
+	- one or two week or 15 days (Mostly its starts on Wednesday and ends with Tuesday)
+	
+an epic serves to manage tasks. It's a defined body of work that is segmented into specific tasks 
+(called “stories,” or “user stories”) based on the needs/requests of customers or end-users
+
+
+PI meeting - 
+	High level team works on who will work on which changes and those changes will be split into small parts so that, 
+	we can do that small work in one sprint time
+	Duration: 4 hours to half a day 
+	Attendee: Product Owner and Scrum master
+	
+Sprint Planning
+	Task(User Stories) for small work is created, explained, assigned to a person, complexity will be decided
+	Here complexity is called story point
+	Basically story point is fibanocci series 1, 2, 3, 5, 8, 13.
+	
+	Inform your leave plan
+	 
+Daily Stand-Up
+	What you did yesterday
+	what are you going to do today 
+	what is your plan for tomorrow
+	Any risk on completing work
+	
+	leave details for unplanned or planned leave
+	
+Sprint Review/Demo
+	Give prove it or demo on whatever stories you did on that sprint
+
+Sprint Retrospective
+	What went well and appreciations
+	What need improvement
+	
+	
+When there is a risk in completing a story
+	E.g: Developer gives story to testing when there is only 3 days left. But in order to complete the testing you need 7 days
+In this case
+	1. No other choice you need to complete the testing in 3 days itself.
+	2. Complete as much as possible, then create a new QA(Testing) story in next sprint
+	3. Move the entire story from this sprint to next sprint
+	4. Let your scrum master to ask for extension of the current sprint
+
+*********************
 
 
 
