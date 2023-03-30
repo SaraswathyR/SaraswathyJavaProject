@@ -1747,7 +1747,7 @@ ProjectName
 Framework reports and basic knowledges on interview and work
 
 *******************************************************************************
-
+43(30/03/2023)
 Agile
 
 
@@ -1808,6 +1808,48 @@ In this case
 
 *********************
 
+Scrum
+
+Teams in Scrum
+
+Company - Wipro
+client/Account - Alight
+	* One Account can have multiple projects
+Domain - Health & Welfare
+Project - Bank of America
+Project contains many teams and they are called scrum teams (POD)  
+
+Consider client as your project team *****
+Each POD is a scrum or agile team
+
+Scrum Team 
+	* Scrum Master - POD lead
+	* Product Owner - BIM/BOM
+	* New hire team config team
+	* New hire testing team
+	
+Scrum team
+	Product Owner(PO) - BIM or BOM
+	Scrum master - Like lead but does only managerial work
+	Devs(Onshore and offshore) - 
+	Testers(Onshore and offshore)
+	Business Tester if there is any
+	
+	In my team totally 12 members
+	1. PO (client person)
+	2. SM (from client or from our company)
+	3. 2 dev in onsite (from client or from our company)
+	4. 3 dev in offshore (from client or from our company)
+	5. 3 Tester in offshore (You and other two) 
+	6. 1 Tester in onshore (Testing lead)
+	7. Business Tester or BA 
+	
+Company - Capgemini
+Client - Fidelity 
+Outsourcing their project to Capgemini
+Chennai have fidelity office too. 
+Project - Fidelity invesment
+Our project have both Client team persons as well as Capgemini team persons
 
 
 
