@@ -10,8 +10,8 @@ public class StaticBasic {
 //		* In order to use the static variables and methods outside of a class, we need to access it using it's respective Class Name
 //		* static will be stored in heap memory
 //		* we can not declare static variable inside a static or non static method 
-//			* because scope of variable declared inside a method ends once method get executed. (method behavior)
-//			* static means, it belongs to the class, mean it can be accessed by any methods of the class or other class (static behavior)
+//			* because scope of variable declared inside a method ends once the holding method get executed. (method behavior)
+//			* static means, it belongs to the class, means it can be accessed by any methods of the class or other class (static behavior)
 //			* Since method and static having exactly opposite behavior, we cant use static inside any method
 	
 //	After OOPS concept

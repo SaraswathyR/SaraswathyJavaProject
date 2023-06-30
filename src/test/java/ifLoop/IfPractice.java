@@ -75,6 +75,16 @@ public class IfPractice {
 		if (a % 2 == 0 && a % 3 == 0) {
 			System.out.println(a + " is divisible by 2 and 3");
 		}
+		
+		if (a % 2 == 0 || a % 3 == 0) {
+			System.out.println(a + " is divisible by 2 or 3");
+		}
+		
+		if(a % 2 == 0) {
+			System.out.println(a + "is divisible by 2");
+			if(a % 3 == 0)
+				System.out.println(a + "is divisible by 3");
+		}
 
 		
 
@@ -134,6 +144,28 @@ public class IfPractice {
 	
 	public static boolean method2() {
 		return true;
+	}
+	
+	public void checkIf() {
+		
+		int arrear = 0;
+		int percentage = 75;
+		int age = 23;
+		
+		if(arrear == 0) {
+			if(percentage > 70) {
+				
+			}
+			else 
+				System.out.println("Not eligible");
+			
+		}
+		else {
+			if(true) {
+				
+			}
+			
+		}
 	}
 
 }

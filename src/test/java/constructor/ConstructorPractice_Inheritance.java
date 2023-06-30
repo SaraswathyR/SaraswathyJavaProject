@@ -12,6 +12,8 @@ public class ConstructorPractice_Inheritance extends Parent1{
 //		super()  always present implicitly
 //		super(20);
 		super("Sathya");
+//		ConstructorPractice_Inheritance();
+//		this();
 		System.out.println("I am int parameterized child constructor");
 	}
 	
@@ -46,6 +48,7 @@ class Parent1 {
 		this(10);
 //		this();
 		System.out.println("I am parent1 class String parameterized constructor");
+		
 		
 	}
 	

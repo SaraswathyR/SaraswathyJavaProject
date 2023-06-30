@@ -9,7 +9,7 @@ public class MultiArrayDeclaration {
 //	* 3D array - array of 2D array
 //	* In Multi dimentional array, length is nothing but "row size".
 //	* To print multidimentional array, we rely on for loops. We can not use simple sysout and Arrays class methods
-//	* While printing multi-dimentional/jagged array using for loop, column size is rely on row. check lines 59 and 60
+//	* While printing multi-dimentional/jagged array using for loop, column size is rely on row of array. check lines 59 and 60
 
 	public static void main(String[] args) {
 //		Single Dimentional array

@@ -38,9 +38,12 @@ package array;
 import java.util.Scanner;
 
 public class DemoArray {
+	
+	static int a = 10;
 
 	public static void main(String[] args) {
-		
+		DemoArray obj = new DemoArray();
+		obj.arrayPractice();
 		
 	}
 	
@@ -50,6 +53,7 @@ public class DemoArray {
 
 	public void arrayPractice() {
 
+//		int ar = 10;
 		int[] ar = new int[3];
 //		ar = {10, 20, 30};
 		ar[0] = 10;
@@ -61,11 +65,18 @@ public class DemoArray {
 		System.out.println(ar);
 
 		System.out.println(ar[1]);
+		
+		for(int i = 0; i<ar.length; i++) {
+			System.out.println(ar[i]);
+			}
+		
+//		printAnyIntArrayUsingBasicForLoop(ar);
 
 		for (int eachValueOfAr : ar) {
+			System.out.println("***");
 			System.out.println(eachValueOfAr);
 		}
-
+		
 		System.out.println(ar.length);
 
 		int arrayLength = ar.length;
@@ -75,7 +86,9 @@ public class DemoArray {
 
 		int[] clonedArray = ar.clone();
 		System.out.println(clonedArray);
-
+		
+//		printIntArrayUsingBasicForLoop(clonedArray);
+		
 		for (int eachValue : clonedArray) {
 			System.out.println(eachValue);
 		}
@@ -105,6 +118,13 @@ public class DemoArray {
 	}
 
 	public void printIntArrayUsingBasicForLoop(int[] array) {
+		System.out.println("Values in the array are");
+		for (int i = 0; i < array.length; i++) {
+			System.out.println(array[i]);
+		}
+	}
+	
+	public void printStringArrayUsingBasicForLoop(String[] array) {
 		System.out.println("Values in the array are");
 		for (int i = 0; i < array.length; i++) {
 			System.out.println(array[i]);
@@ -197,5 +217,6 @@ public class DemoArray {
 		}
 //		return testArray[index];
 	}
+	
 
 }

@@ -15,6 +15,11 @@ public class BasicSeleniumCode {
 
 	public static void main(String[] args) throws Exception {
 		
+		
+	}
+	
+	public void test123() {
+		
 		System.out.println(System.getProperty("user.dir"));
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_109.exe");
 		WebDriver driver = new ChromeDriver();

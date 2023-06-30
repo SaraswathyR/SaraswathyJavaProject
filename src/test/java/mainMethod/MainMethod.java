@@ -1,5 +1,7 @@
 package mainMethod;
 
+//See after oops concepts
+
 //* JVM always looks for main method
 //* main method signature should not be changed, because JVM always looks for main(String[] args)
 //* we can write it as public static void main or static public void main
@@ -10,6 +12,7 @@ package mainMethod;
 //* We can overload main method
 //* Since main method is static, we can not override it
 //* We can not declare a static variable inside main method
+//		* Not only in main, we can not create static variables inside any methods
 
 public class MainMethod {
 	

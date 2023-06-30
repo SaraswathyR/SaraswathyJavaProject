@@ -1,5 +1,8 @@
 package inheritanceInJava;
 
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.TakesScreenshot;
+
 public class LearnInheritance implements InheritanceInterface1{
 	
 //	Parent class/ Super class
@@ -7,7 +10,7 @@ public class LearnInheritance implements InheritanceInterface1{
 	
 //	Inheritance is the property of using the parent class variables/methods in child class
 //	extends and implements are the java keywords, used to achieve inheritance.
-//	For Class to Class inheritance or Interface to Interface or Class to AbstractClass or AbstractClass to Class - we use extends keyword 
+//	For Class to Class inheritance or Interface to Interface or Class to AbstractClass or AbstractClass to Class or Abstract class to Abstract classs - we use extends keyword 
 //		1) Ex: Exception class extends Throwable class
 //	For Class to interface inheritance - we use implements keyword 
 //		1) Ex: Throwable class implements Serializable interface
@@ -37,7 +40,8 @@ public class LearnInheritance implements InheritanceInterface1{
 	
 //	Where do we use multiple inheritance
 //	public class ArrayList<E> extends AbstractList<E> implements List<E>, RandomAccess, Cloneable, java.io.Serializable
-
+//  public interface WebElement extends SearchContext, TakesScreenshot
+	
 //	Where do we use multilevel inheritance
 //	public class ArithmaticException extends RunTimeException;
 //	public class RunTimeException extends Exception;
@@ -45,7 +49,7 @@ public class LearnInheritance implements InheritanceInterface1{
 //	public class Throwable implements Serializable;
 	
 	
-//	Every class in java is always extended by Objecy c
+//	Every class in java is always extended by Object class
 
 	public static void main(String[] args) {
 		

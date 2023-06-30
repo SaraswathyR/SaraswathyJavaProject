@@ -1,7 +1,7 @@
 package overloading;
 
 //* It happens within a Class
-//* Its based on method signature
+//* Its based on method signature (methodName with or without parameter)
 //	* Method name should be same
 //	* Parameters SHOULD/MUST vary
 //		* Type of parameter
@@ -21,11 +21,11 @@ public class OverloadingDemo1 {
 	long l;
 
 	public void buySoap() {
-		System.out.println("Buy soap");
+		System.out.println("Buy soap public method");
 	}
 
 //	private void buySoap() {
-//		System.out.println("Buy soap");
+//		System.out.println("Buy soap private method");
 //	}
 	
 //	public String buySoap() {
@@ -38,14 +38,14 @@ public class OverloadingDemo1 {
 	}
 	
 
-//	public String buySoap(String soapName) {
-//		System.out.println("Buy soap");
-//		return soapName;
-//	}
-
-	public void buySoap(String soapName) {
-		System.out.println("Buy " + soapName + " soap");
+	public String buySoap(String soapName) {
+		System.out.println("Buy soap");
+		return soapName;
 	}
+
+//	public void buySoap(String soapName) {
+//		System.out.println("Buy " + soapName + " soap");
+//	}
 
 	public void buyRice(String riceName) {
 		System.out.println("");
@@ -78,7 +78,7 @@ public class OverloadingDemo1 {
 		od.buySoap(50);
 		od.buySoap(20, "Lux");
 		od.buySoap("Lux", 100);
-
+		
 	}
 
 }

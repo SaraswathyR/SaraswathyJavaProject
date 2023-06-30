@@ -1,11 +1,11 @@
 //* final is a keyword in java
-//* final can be used with variable, method and class
+//* final can be used with variables, methods and classes
 //* If we declare a variable as final, the value of the variable can not be changed ANYWHERE
 //* If a method is declared as final, then we can not override it
 //* If a method is declared as final, then we can overload it
 //* If we use final keyword with a class, no class can inherit(extend) it
 //		e.g String class in Java--> String is a final class in java
-//* final can not be used with interface. There is no point in using final with interface
+//* we can not create interface as final. There is no point in using final with interface
 //* variables declared in interface are final in nature
 //* Variable/method can be declared as final in both static and non static methods
 //*	Variables declared as final in class level must be initialized whereas variables declared as final inside a method need not be initialized
@@ -27,6 +27,10 @@ public class FinalDemo extends ParentFinal implements FinalInterface {
 	public FinalDemo() {
 		b = 20;
 	}
+	
+	public FinalDemo(int a) {
+		b = 20;
+	}
 
 	public static void main(String[] args) {
 		FinalDemo obj = new FinalDemo();
@@ -34,6 +38,7 @@ public class FinalDemo extends ParentFinal implements FinalInterface {
 //		obj.a = 100;
 		System.out.println(obj.aa);
 		System.out.println(obj.aa = 150);
+//		System.out.println(obj.a = 150);
 
 		System.out.println(test);
 //		System.out.println(test = 11);
@@ -51,9 +56,9 @@ public class FinalDemo extends ParentFinal implements FinalInterface {
 		System.out.println("I am a normal method without parameter");
 	}
 
-	public final void method2() {
-		System.out.println("I am a final method without parameter");
-	}
+//	public final void method2() {
+//		System.out.println("I am a final method without parameter");
+//	}
 
 	public final void method2(int aa) {
 		System.out.println("I am a final method with int parameter");
@@ -80,9 +85,9 @@ class ParentFinal {
 		System.out.println("I am a normal method without parameter from parent");
 	}
 
-//	public final void method2() {
-//		System.out.println("I am a final method without parameter from parent");
-//	}
+	public final void method2() {
+		System.out.println("I am a final method without parameter from parent");
+	}
 
 }
 

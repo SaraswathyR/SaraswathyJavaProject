@@ -3,6 +3,7 @@ package blocksInjava;
 public class StaticBlock {
 	
 	static int x = 10;
+	int y = 20;
 	
 	static {
 		System.out.println("I am static block start");
@@ -16,6 +17,7 @@ public class StaticBlock {
 //		buySoap();
 		StaticBlock obj = new StaticBlock();
 		obj.buySoap();
+		System.out.println(obj.y);
 		System.out.println("I am static block end");
 	}
 	

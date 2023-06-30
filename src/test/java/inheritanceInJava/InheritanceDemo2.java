@@ -18,7 +18,11 @@ public class InheritanceDemo2 extends InheritanceDemo1 {
 	}
 	
 	void method1() {
-		
+//		Exception;
+//		ArithmaticException;
+//		IOException
+//		WebElement
+//		ArrayList
 	}
 	
 	public static void childMethod3(String abc) {

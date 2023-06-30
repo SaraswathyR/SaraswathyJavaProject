@@ -8,7 +8,7 @@
 //	But while super() is implicit, we can use this(). So in this case both super() and this() will run; THIS IS WRONG
 //* super(); 
 //* whenever we call a child class constructor, parent class constructor will be always called because
-//	* in child class constructor, super() keyword is implicitly written and it will call the parent class constructor
+//	* in child class constructor, super() keyword is implicitly written and it will call the parent class default constructor
 //* Child class's parameterized constructor ALWAYS have super() implicitly written but NOT super(parameterized);
 //* Parameter passed in child class constructor wont be passed to super()
 //* If we want our child class's parameterized constructor to call parent class's parameterized constructor,

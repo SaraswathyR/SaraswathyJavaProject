@@ -33,8 +33,8 @@ public class JaggedArray {
 //		System.out.println(batchMates);
 //		System.out.println(Arrays.toString(batchMates));
 		
-		for(String eachBatchMates[]:batchMates) {
-//			System.out.println(Arrays.toString(eachBatchMates));
+		for(String[] eachBatchMates:batchMates) {
+			System.out.println(Arrays.toString(eachBatchMates));
 		}
 		
 		for(int i=0; i<batchMates.length;i++) {

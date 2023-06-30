@@ -15,15 +15,16 @@ public class ActionClassPractice {
 
 	public static void main(String[] args) {
 		ActionClassPractice ACP = new ActionClassPractice();
-		ACP.launchBrowser("chrome");
-		ACP.launchApplication("Crocs", 30);
-		WebElement shopByStyle = driver.findElement(By.xpath("//h3[text() = 'Shop by Style']"));
-		ACP.scrollToAnElementUsingActions(shopByStyle);
+		ACP.test();
+//		ACP.launchBrowser("chrome");
+//		ACP.launchApplication("Crocs", 30);
+//		WebElement shopByStyle = driver.findElement(By.xpath("//h3[text() = 'Shop by Style']"));
+//		ACP.scrollToAnElementUsingActions(shopByStyle);
 	}
 
 	public void test() {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\LENOVO\\git\\SaraswathyJavaProject\\drivers\\chromedriver_109.exe");
+				".\\src\\test\\resources\\drivers\\chromedriver_114.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.crocs.in/");
@@ -33,14 +34,14 @@ public class ActionClassPractice {
 				.findElement(By.xpath("//span[text() = 'Women' and @class = 'menuLink-title-J7d']"));
 
 		Actions actions = new Actions(driver);
-//		actions.moveToElement(womenTab).build().perform();
+		actions.moveToElement(womenTab).build().perform();
 
 //		actions.contextClick(womenTab).build().perform();
 
 //		actions.contextClick().sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
 
-		actions.moveToElement(womenTab).contextClick().pause(5000).keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN)
-				.keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
+//		actions.moveToElement(womenTab).contextClick().pause(5000).keyDown(Keys.ARROW_DOWN).keyUp(Keys.ARROW_DOWN)
+//				.keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
 
 	}
 

@@ -1,27 +1,27 @@
 package constructor;
 
-public class ConstructorSchoolDemo1 {
+public class ConstructorUse3_SchoolDemo {
 
 	public String rollNo, name, age;
 	public String standard = "I std";
 
-	public ConstructorSchoolDemo1() {
+	public ConstructorUse3_SchoolDemo() {
 
 	}
 
-	public ConstructorSchoolDemo1(String rollNo, String name, String age, String standard) {
+	public ConstructorUse3_SchoolDemo(String rollNo, String name, String age, String standard) {
 
 		System.out.println(rollNo + "   " + name + "   " + age + "   " + standard);
 	}
 
-	public ConstructorSchoolDemo1(String rollNo, String name, String age) {
+	public ConstructorUse3_SchoolDemo(String rollNo, String name, String age) {
 
 		System.out.println(rollNo + "   " + name + "   " + age + "   " + standard);
 	}
 
 	public static void main(String[] args) {
 
-		ConstructorSchoolDemo1 student1 = new ConstructorSchoolDemo1();
+		ConstructorUse3_SchoolDemo student1 = new ConstructorUse3_SchoolDemo();
 		student1.rollNo = "1";
 		student1.name = "A";
 		student1.age = "10";
@@ -29,7 +29,7 @@ public class ConstructorSchoolDemo1 {
 		System.out
 				.println(student1.rollNo + "   " + student1.name + "   " + student1.age + "     " + student1.standard);
 
-		ConstructorSchoolDemo1 student2 = new ConstructorSchoolDemo1();
+		ConstructorUse3_SchoolDemo student2 = new ConstructorUse3_SchoolDemo();
 		student2.rollNo = "2";
 		student2.name = "B";
 		student2.age = "10";
@@ -37,8 +37,8 @@ public class ConstructorSchoolDemo1 {
 		System.out
 				.println(student2.rollNo + "   " + student2.name + "   " + student2.age + "     " + student2.standard);
 
-		ConstructorSchoolDemo1 student3 = new ConstructorSchoolDemo1("3", "C", "11", "I std");
-		ConstructorSchoolDemo1 student4 = new ConstructorSchoolDemo1("4", "D", "10");
+		ConstructorUse3_SchoolDemo student3 = new ConstructorUse3_SchoolDemo("3", "C", "11", "I std");
+		ConstructorUse3_SchoolDemo student4 = new ConstructorUse3_SchoolDemo("4", "D", "10");
 
 	}
 

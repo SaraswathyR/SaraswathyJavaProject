@@ -6,7 +6,7 @@
 //	* calling a method(), is same as this.method() with in a same class. Only for calling non-static from static, we need to create object
 
 
-//* We can use this(), to call other constructors from any constructors with in one class.
+//* We can use this(), to call other constructors from any constructors within a class.
 //* this() should be used within a constructor only. Means, we can not use it in methods.
 //* this() MUST be first statement in constructor calling
 //		- Constructor call must be the first statement in a constructor

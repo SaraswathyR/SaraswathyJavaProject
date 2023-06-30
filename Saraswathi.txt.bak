@@ -224,7 +224,7 @@ Method2 - B work
 Method3 - C work ( A work + some other work)
 
 redundant - repeatable 
-reuse
+resure
 
 Variables - shape and count/name
 shape - datatype 
@@ -233,7 +233,7 @@ shape - datatype
 Datatype: Its a classification of a data, which tells the compiler or interpretor about how the programmer intends to use the data.
 
 1) Primitive
-	a) boolean - yes or no OR true or false 
+	a) boolean - yes or no
 	b) Textual 
 		char - a, b, c, A, B
 		byte - 
@@ -255,16 +255,12 @@ each datatype has a default value
 * default value of int is 0
 * boolean - false
 
-How we declare datatypes
-Syntax = accessModifier dataType variableName = variableValue
-
 int a = 10;  
 int a;
 String a = "10";
-String a;
 double a = 10d;
 char sathya = 'A';
-boolean Boolean = true;
+boolean b = true;
 
 int a; - declare
 a = 10; - define/initiate
@@ -280,7 +276,7 @@ Types of variables
 1. Local variable - 
 	* declared within a method/constructor, for, if    -- block ({...})
 	* scope of local variable is only within the block in which the variable is declared
-	* intialisation of local variable is madatory
+	* intialization of local variable is madatory
 	* local variables can not be static
 	{
 	int a = 10;
@@ -288,7 +284,7 @@ Types of variables
 	String sathya = "10";
 	}
 	
-2. Instance variable/class variable/non-static variable
+2. Instance variable/class variable/non-static  variable
 	* Declared within a class but outside of a block ({...})
 	* Non- static variables
 	* To access instance variables, we need to create object
@@ -297,12 +293,12 @@ Types of variables
 	String sathya = "10";
 	
 	
-3. static variable
-	* Declared within a class but outside of a block
+3. Static variable
+	* Declared within a class but outside fo a method
 	* static keyword is used with variables and methods
 	* To access this variable, dont need to create an object
 	* within a class - static can be used anywhere directly (in a static method or in non-static method)
-	* Outside class - static can be used but along with class name. (in a static method or in non-static method)
+	* Outside calss - static can be used but alone with class name. (in a static method or in non-static method)
 	
 	static int a = 10;
 	static String sathya = "10";
@@ -356,7 +352,7 @@ compile - .class - byte code (machine recognizable language)
 
 JVM - Java Virtual Machine 
 * This can not be seen
-* it starts the execution(creates Runtime Environment)
+* it starts the execution
 * It first checks for main method
 * It creates the code flow, in java the flow is called "Thread" 
 * JVM provides run time environment in which Java byte codes can be executed
@@ -418,7 +414,7 @@ version 10.1.10
 ************************************************************************************************
 DAY 4
 
-Git (one of the SCM - source code management tools)
+Git 
 
 We can store our project code in a proper structure. 
 It will help us to reduce time and many people can work on a project at a same time 
@@ -457,7 +453,7 @@ switch
 
 * Java is case sensitive language
 
-Naming conversion in java
+Naming coversion in java
 * Should not use above things
 * homepage - homePage (Camel case)
 
@@ -510,7 +506,7 @@ public static void thisIsStaticMethod() {
 
 Methods in Java
 
-1) main method (also a static method)
+1) main method 
 2) static method
 3) non static method
 
@@ -617,7 +613,7 @@ Based on where we use our data types or variable names, we categories variables 
 
 ****************************************************************************************
 
-Data type as a parameter and return type
+Daya type as a parameter and return type
 Variable as a parameter
 
 Methods in Java
@@ -773,8 +769,8 @@ if, for, while, do
 
 final
 static
-super, super()
-this, this()
+super
+this
 
 static
  * always belongs to the class
@@ -819,7 +815,7 @@ Throw Throws Throwable
 
 DAY 13
 
-if
+if 
 
 **********************************************************************
 
@@ -925,7 +921,7 @@ try with a sentence
 mostly we use the below concepts
 array, string methods, for, if and temp variable
 
-String(word/sentence)/Array/Collection
+String(word/sentece)/Array/Collection
 reverse 
 sort
 count
@@ -1021,13 +1017,13 @@ Date choose
 Drag and drop
 File upload
 Verification/Assert 
-page load speed/time(synchronization)
+page load speed/time
 Keyboard
 pop up
 	alert
 	tab
 	web alert like info screen
-	Desktop window
+	Desktop window 
 frames
 wait
 WebTable
@@ -1092,16 +1088,13 @@ contains(text, 'Sathya')
 We find elements in a page using locators 
 
 Locators in selenium - 
-	locator value should not be duplicate. must be unique
-		means, id = "sathya" should be present only once
-
 id 
 	* do not use if it has numbers in it. 
 name
 className
 	* with more spaces 
 tagName
-linkText
+linkText/partialLinkText
 partialLinkText
 CSS selector
 xpath
@@ -1219,7 +1212,7 @@ Diff between Chrome browser and Chrome driver
 chrome - ChromeDriver - we need to download chromeDriver.exe, while running code, we have to let WebDriver about its path.
 Instead of running chrome.exe from our system, we ask webDriver to run ChromeDriver.exe
 For each browser, we need to take compatible version of its driver.
-for eg: For chrome version 107, we need to download chrome driver version compatible for chrome 107
+for eg: For chrome version 107, we need to download chrome driver version 107.
 Basically we keep the chromeDriver.exe files inside project but we dont push them into git
 
 In order to avoid compatibility issue, we have a concept called WebDriverManager
@@ -1428,8 +1421,7 @@ Alert
 
 To handle alert 
 
-NoAlertPresentException
-UnHandledAlertException
+
 
 **************************************************************************************
 
@@ -1470,7 +1462,7 @@ Actions class in selenium
 	* drag and drop
 	* move mouse to hover on an element (mouse hover)
 	* scroll
-	* Keyboard actions 
+	* Keyboard actions
 	
 * In actions, we combine many actions. 
 * So whenever we use actions, we need to build(combine) and perform();
@@ -1486,8 +1478,6 @@ https://testguild.com/selenium-how-to-handle-windows-based-dialogs-and-pop-ups/
 
 * It is used to automate Mouse and Keyboards 
 * along with this, to automate window based pop ups, we use robot class 
-
-(press, release)
 
 ****************************************
 Waits in Selenium 
@@ -1546,15 +1536,6 @@ questions would be
 scrolling 
 	 JavascriptExecutor js = (JavascriptExecutor)driver;
 	 js.executeScript(“window.scrollBy(0,150)”);
-	 
-	 https://www.guru99.com/execute-javascript-selenium-webdriver.html
-	 
-Screentshot
-
-TakesScreenshot ts = (TakesScreenshot) driver;
-ts..getScreenshotAs(OutputType.FILE);
-File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
- * String screenshotBase64 = ((TakesScreenshot) element).getScreenshotAs(OutputType.BASE64);
 	 
 
 ************************************************************************
@@ -1628,7 +1609,7 @@ Order of annotation
 @AfterMethod
 @AfterClass
 @AfterTest
-@AfterSuite
+@AfterSuite0
 
 priority = 1
 enabled = true/false
